@@ -41,7 +41,7 @@ discount | 23.56 | Double(18,2) | Si | Descuento por la venta
 amount_total | 134.90 | Double(18,2) | Si | Monto total de la venta
 customer | [Customer](CUSTOMER.md) | Array | Si | Cliente de la venta
 taxes | []  | Array | Si | Impuestos
-items | ['quantity', 'price', 'price_tax', 'tax_total_item', 'tax_unit_item', 'type_igv', 'description', 'system_id', 'correlative', 'type'] | Array | Si | Productos de la venta
+items | [] | Array | Si | Productos de la venta
 
 #### Customer
 Nombre de parámetro | Formato | Tipo | Obligatorio | Descripcion 
