@@ -1,4 +1,4 @@
-#### Customer
+### Customer
 Nombre de parámetro | Formato | Tipo | Obligatorio | Descripcion 
 ------------ | ------------- | ------------- | ------------- | -------------
 document | [-]| String | Si | Es el número de documento del cliente
