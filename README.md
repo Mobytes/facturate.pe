@@ -36,6 +36,12 @@ date | MM-DD-YYY | String | Si | La fecha de cuando se emitio la factura. ``Ejem
 type_receipt | A4 or Ticket| String | Si | Módelo de documento a imprimir o enviar a correo eléctronico.
 method_name | Efectivo, Visa, Cheque, Deposito a cuenta | String | Si | Por que medio de pago se cancelo la factura.
 invoice_type | 01 | String | Si | Tipo de comprobante, ```01 es de una factura```.
+currency | 'PEN', 'USD' | String | Si | El tipo de moneda que se hizo el pago, ```PEN => Soles```.
+discount | 23.56 | Double(18,2) | Si | Descuento por la venta
+amount_total | 134.90 | Double(18,2) | Si | Monto total de la venta
+customer | [] | Array | Si | Datos del cliente
+taxes | [] | Array | Si | Impuestos
+items | [] | Array | Si | Productos de la venta
 
 ## Enviando notificaciones
 
