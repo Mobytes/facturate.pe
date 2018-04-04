@@ -25,7 +25,7 @@ taxes | [TAXES](TAXES.md) | Array | Si | Impuestos de la venta
 items | [ITEMS](ITEMS.md) | Array | Si | Productos de la venta
 
 ### Enviar Boleta
-```json
+```js
 {
   'nro_document': 'B001-00000308', 
   'date': '2018-04-04', 
