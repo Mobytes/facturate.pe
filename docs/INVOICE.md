@@ -24,6 +24,49 @@ customer | [CUSTOMER](CUSTOMER.md) | Array | Si | Cliente de la venta
 taxes | [TAXES](TAXES.md) | Array | Si | Impuestos de la venta
 items | [ITEMS](ITEMS.md) | Array | Si | Productos de la venta
 
+### Enviar Factura
+```js
+{
+  'nro_document': 'B001-00000308', 
+  'date': '2018-04-04', 
+  'invoice_type': '03', 
+  'method_name': 'Efectivo', 
+  'amount_total': Decimal('16.00'), 
+  'type_receipt': 'Ticket', 
+  'currency': 'PEN', 
+  'taxes': [
+              {
+              'tax_total': Decimal('0.00'), 
+              'tribute_code': '1000'
+              }
+            ], 
+  'customer': {
+                'document': '-', 
+                'client_id': 1, 
+                'type_document': '-', 
+                'business_name': 'Cliente', 
+                'telephone': '-', 
+                'email': '', 
+                'address': '-'
+              }, 
+  'items': [
+              {
+                'quantity': Decimal('4.00'), 
+                'price': Decimal('4.00'), 
+                'price_tax': Decimal('4.00'), 
+                'tax_total_item': Decimal('0.00'), 
+                'tax_unit_item': Decimal('0.00'), 
+                'type_igv': '20', 
+                'description': 'GASEOSA INCAK', 
+                'system_id': '7750002000164', 
+                'correlative': 1, 
+                'type': '2001'
+              }
+           ], 
+  'discount': '0.00'
+}
+```
+
 ### PHP
 ```php
 curl_setopt_array($ch = curl_init(), array(
