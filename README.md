@@ -39,7 +39,7 @@ invoice_type | 01 | String | Si | Tipo de comprobante, ```01 es de una factura``
 currency | PEN, USD | String | Si | El tipo de moneda que se hizo el pago, ```PEN => Soles```.
 discount | 23.56 | Double(18,2) | Si | Descuento por la venta
 amount_total | 134.90 | Double(18,2) | Si | Monto total de la venta
-customer | document, client_id, type_document, business_name, telephone, email, address | Array | Si | Datos del cliente
+customer | any | Array | Si | se explica más abajo
 taxes | []  | Array | Si | Impuestos
 items | ['quantity', 'price', 'price_tax', 'tax_total_item', 'tax_unit_item', 'type_igv', 'description', 'system_id', 'correlative', 'type'] | Array | Si | Productos de la venta
 
@@ -53,6 +53,12 @@ business_name | any| String | No | Es obligatorio si es una factura
 telephone | any| String | No | El número de teléfono
 email | any| String | No | El el email del cliente
 address | any| String | Si | Es obligatorio si es una factura
+
+#### Taxes []
+Nombre de parámetro | Formato | Tipo | Obligatorio | Descripcion 
+------------ | ------------- | ------------- | ------------- | -------------
+tax_total | X.XX| Double(18,2) | Si | Es el total del impuesto
+tribute_code | XXXX | String | Si | El el código del impuesto en la Sunat, IGV(1000) o ISC(1003)
 
 
 ### PHP
