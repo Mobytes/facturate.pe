@@ -29,7 +29,7 @@ https://demo.facturate.pe/api/v1/invoice/efactura/ | POST | nro_document, date, 
 
 ## Parametros
 
-Name | Format | Type | Require | Description 
+Nombre | Formato | Tipo | Requerido | Descripción 
 ------------ | ------------- | ------------- | ------------- | -------------
 nro_document | FXXX-XXXXXXXX| String | Si | Es el número de documento de la factura. Ejemplo F001-00002321
 date | MM-DD-YYY | String | Si | La fecha de cuando se emitio la factura. ``Ejemplo 23-03-2018``.
