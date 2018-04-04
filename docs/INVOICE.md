@@ -13,7 +13,7 @@ https://demo.facturate.pe/api/v1/invoice/efactura/ | POST | nro_document, date, 
 Nombre | Formato | Tipo | Requerido | Descripción 
 ------------ | ------------- | ------------- | ------------- | -------------
 nro_document | FXXX-XXXXXXXX| String | Si | Es el número de documento de la factura.
-date | MM-DD-YYY | String | Si | La fecha de cuando se emitio la factura.
+date | YYYY-MM-DD | String | Si | La fecha de cuando se emitio la factura.
 type_receipt | A4 or Ticket| String | Si | Módelo de documento a imprimir o enviar a correo eléctronico.
 method_name | Efectivo, Visa, Cheque, Deposito a cuenta | String | Si | Por que medio de pago se cancelo la factura.
 invoice_type | 01 | String | Si | Tipo de comprobante, ```01 es de una Factura y 03 es una Boleta```.
@@ -24,19 +24,19 @@ customer | [CUSTOMER](CUSTOMER.md) | Array | Si | Cliente de la venta
 taxes | [TAXES](TAXES.md) | Array | Si | Impuestos de la venta
 items | [ITEMS](ITEMS.md) | Array | Si | Productos de la venta
 
-### Enviar Factura
-```js
+### Enviar Boleta
+```json
 {
   'nro_document': 'B001-00000308', 
   'date': '2018-04-04', 
   'invoice_type': '03', 
   'method_name': 'Efectivo', 
-  'amount_total': Decimal('16.00'), 
+  'amount_total': 16.00', 
   'type_receipt': 'Ticket', 
   'currency': 'PEN', 
   'taxes': [
               {
-              'tax_total': Decimal('0.00'), 
+              'tax_total': 0.00, 
               'tribute_code': '1000'
               }
             ], 
@@ -51,11 +51,11 @@ items | [ITEMS](ITEMS.md) | Array | Si | Productos de la venta
               }, 
   'items': [
               {
-                'quantity': Decimal('4.00'), 
-                'price': Decimal('4.00'), 
-                'price_tax': Decimal('4.00'), 
-                'tax_total_item': Decimal('0.00'), 
-                'tax_unit_item': Decimal('0.00'), 
+                'quantity': 4.00, 
+                'price': 4.00, 
+                'price_tax': 4.00, 
+                'tax_total_item': 0.00, 
+                'tax_unit_item': 0.00, 
                 'type_igv': '20', 
                 'description': 'GASEOSA INCAK', 
                 'system_id': '7750002000164', 
@@ -63,9 +63,10 @@ items | [ITEMS](ITEMS.md) | Array | Si | Productos de la venta
                 'type': '2001'
               }
            ], 
-  'discount': '0.00'
+  'discount': 0.00
 }
 ```
+
 
 ### PHP
 ```php
