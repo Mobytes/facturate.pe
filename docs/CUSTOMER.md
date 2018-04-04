@@ -12,6 +12,7 @@ email | any| String | No | El el email del cliente
 address | any| String | Si | Es obligatorio si es una factura
 
 
+
 #### DATOS SUNAT
 
 * Tipo documento
