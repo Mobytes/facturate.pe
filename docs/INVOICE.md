@@ -20,9 +20,9 @@ invoice_type | 01 | String | Si | Tipo de comprobante, ```01 es de una factura``
 currency | PEN, USD | String | Si | El tipo de moneda que se hizo el pago, ```PEN => Soles```.
 discount | 23.56 | Double(18,2) | Si | Descuento por la venta
 amount_total | 134.90 | Double(18,2) | Si | Monto total de la venta
-customer | [Customer](docs/CUSTOMER.md) | Array | Si | Cliente de la venta
-taxes | [Taxes](docs/TAXES.md) | Array | Si | Impuestos de la venta
-items | [Items](docs/ITEMS.md) | Array | Si | Productos de la venta
+customer | [Customer](CUSTOMER.md) | Array | Si | Cliente de la venta
+taxes | [Taxes](TAXES.md) | Array | Si | Impuestos de la venta
+items | [Items](ITEMS.md) | Array | Si | Productos de la venta
 
 ### PHP
 ```php
