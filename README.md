@@ -46,7 +46,13 @@ items | ['quantity', 'price', 'price_tax', 'tax_total_item', 'tax_unit_item', 't
 #### Customer
 Nombre de parámetro | Formato | Tipo | Obligatorio | Descripcion 
 ------------ | ------------- | ------------- | ------------- | -------------
-nro_document | FXXX-XXXXXXXX| String | Si | Es el número de documento de la factura. Ejemplo F001-00002321
+document | [-]| String | Si | Es el número de documento del cliente
+client_id | any| String | Si | El el id de tu sistema
+type_document | any| String | No | El el tipo de documento
+business_name | any| String | No | Es obligatorio si es una factura
+telephone | any| String | No | El número de teléfono
+email | any| String | No | El el email del cliente
+address | any| String | Si | Es obligatorio si es una factura
 
 
 ### PHP
