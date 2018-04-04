@@ -17,4 +17,4 @@ address | any| String | Si | Es obligatorio si es una factura
 
 * Tipo documento
 
-![Tipo documento](images/type_document.png)
+![Tipo documento](images/additional_account_id.png)
