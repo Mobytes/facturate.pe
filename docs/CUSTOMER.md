@@ -15,4 +15,5 @@ address | any| String | Si | Es obligatorio si es una factura
 #### DATOS SUNAT
 
 * Tipo documento
-![Image of Yaktocat](images/type_document.png)
+
+![Tipo documento](images/type_document.png)
