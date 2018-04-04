@@ -1,12 +1,9 @@
 ### Customer
 Son datos del cliente, dependiendo si es Jurídico o Natural
 
-DNI => Tamaño 8
-RUC => Tamaño 11
-
 Nombre | Formato | Tipo | Obligatorio | Descripcion 
 ------------ | ------------- | ------------- | ------------- | -------------
-document | DNI or RUC | String | Si | Es el número de documento del cliente. ```DNI => Natural, RUC => Jurídico```
+document | XXXXXXXX, XXXXXXXXXXX | String | Si | Es el número de documento del cliente. ```DNI[8] => Natural, RUC[11] => Jurídico```
 client_id | any| String | Si | El el id de tu sistema
 type_document | any| String | No | El el tipo de documento
 business_name | any| String | No | Es obligatorio si es una factura
