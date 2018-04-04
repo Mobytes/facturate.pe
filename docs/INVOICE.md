@@ -31,7 +31,7 @@ items | [ITEMS](ITEMS.md) | Array | Si | Productos de la venta
   'date': '2018-04-04', 
   'invoice_type': '03', 
   'method_name': 'Efectivo', 
-  'amount_total': 16.00', 
+  'amount_total': 16.00, 
   'type_receipt': 'Ticket', 
   'currency': 'PEN', 
   'taxes': [
