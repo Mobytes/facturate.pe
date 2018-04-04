@@ -10,6 +10,7 @@ Código | Descripción | UN/ECE 5153- Duty or tax or fee type name code
 9999 | OTROS CONCEPTOS DE PAGO | OTH
 
 * Parametros
+
 Nombre | Formato | Tipo | Obligatorio | Descripción 
 ------------ | ------------- | ------------- | ------------- | -------------
 tax_total | X.XX| Double(18,2) | Si | Es el total del impuesto
