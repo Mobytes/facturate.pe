@@ -43,31 +43,6 @@ customer | [Customer](CUSTOMER.md) | Array | Si | Cliente de la venta
 taxes | [Taxes](TAXES.md) | Array | Si | Impuestos de la venta
 items | [] | Array | Si | Productos de la venta
 
-#### Customer
-Nombre de parámetro | Formato | Tipo | Obligatorio | Descripcion 
------------- | ------------- | ------------- | ------------- | -------------
-document | [-]| String | Si | Es el número de documento del cliente
-client_id | any| String | Si | El el id de tu sistema
-type_document | any| String | No | El el tipo de documento
-business_name | any| String | No | Es obligatorio si es una factura
-telephone | any| String | No | El número de teléfono
-email | any| String | No | El el email del cliente
-address | any| String | Si | Es obligatorio si es una factura
-
-#### Items []
-Nombre de parámetro | Formato | Tipo | Obligatorio | Descripcion 
------------- | ------------- | ------------- | ------------- | -------------
-quantity | XX | int | Si | Es la cantidad de productos vendidos
-price | XX.XX | Double(18,2) | Si | Es el precio sin impuesto
-price_tax | XX.XX | Double(18,2) | Si | Es el precio con impuesto
-tax_total_item | XX.XX | Double(18,2) | No | Impuesto total
-tax_unit_item | XX.XX | Double(18,2) | No | Impuesto por item
-type_igv | any | String | No | Código del impuesto
-description | any | String | No | Nombre del producto
-system_id | any| String | Si | id del producto en tu sistema
-correlative | any| String | Si | Correlativo en la venta
-type | any| String | Si | Tipo de producto según Sunat
-
 ### PHP
 ```php
 curl_setopt_array($ch = curl_init(), array(
