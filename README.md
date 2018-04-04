@@ -15,6 +15,6 @@ Los documentos elétronicos que puede enviar son:
 
 * [Factura eléctronica](docs/INVOICE.md)
 * [Boleta eléctronica](docs/RECEIPT.md)
-* Comunicación de baja: factura o boleta elécronica
+* [Comunicación de baja](docs/UNSUBSCRIBE.md)
 * Nota de Crédito (muy pronto)
 * Nota de Debito (muy pronto)
