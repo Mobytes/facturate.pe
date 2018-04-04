@@ -16,8 +16,8 @@ nro_document | FXXX-XXXXXXXX| String | Si | Es el número de documento de la fac
 date | MM-DD-YYY | String | Si | La fecha de cuando se emitio la factura. ``Ejemplo 23-03-2018``.
 type_receipt | A4 or Ticket| String | Si | Módelo de documento a imprimir o enviar a correo eléctronico.
 method_name | Efectivo, Visa, Cheque, Deposito a cuenta | String | Si | Por que medio de pago se cancelo la factura.
-invoice_type | 01 | String | Si | Tipo de comprobante, ```01 es de una factura```.
-currency | PEN, USD | String | Si | El tipo de moneda que se hizo el pago, ```PEN => Soles```.
+invoice_type | 01 | String | Si | Tipo de comprobante, ```01 es de una Factura y 03 es una Boleta```.
+currency | PEN, USD | String | Si | El tipo de moneda que se hizo el pago, ```PEN => Soles, USD => Dolares```.
 discount | XX.XX | Double(18,2) | Si | Descuento por la venta
 amount_total | XXX.XX | Double(18,2) | Si | Monto total de la venta
 customer | [CUSTOMER](CUSTOMER.md) | Array | Si | Cliente de la venta
