@@ -1,7 +1,7 @@
 ### Customer
 Son datos del cliente, dependiendo si es Jurídico o Natural
 
-Nombre de parámetro | Formato | Tipo | Obligatorio | Descripcion 
+Nombre | Formato | Tipo | Obligatorio | Descripcion 
 ------------ | ------------- | ------------- | ------------- | -------------
 document | XXXXXXXX, XXXXXXXXXXX | String | Si | Es el número de documento del cliente. ```DNI => Natural, RUC => Jurídico```
 client_id | any| String | Si | El el id de tu sistema
