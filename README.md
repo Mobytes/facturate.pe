@@ -1,5 +1,5 @@
 # FacturaYa
-La API REST le permite interactuar con FacturaYa.pe para que pueda enviar sus documentos eléctronicos por una petición HTTP.
+La API REST le permite interactuar con **FacturaYa.pe** para que pueda enviar sus documentos eléctronicos por una petición HTTP.
 
 Los documentos elétronicos que puede enviar son:
 
@@ -31,8 +31,9 @@ https://demo.facturate.pe/api/v1/invoice/efactura/ | POST | nro_document, date, 
 
 Nombre de parámetro | Tipo | Obligatorio | Descripcion
 ------------ | ------------- | ------------ | ----------
-token_user | String | Si | Su clave de usuario. Puede encontrar su ``token_user`` en la sección de configuración de su aplicación                             dentro del portal de desarrolladores.
-token_app | String | Si | Su clave de aplicación. Puede encontrar su ``token_user`` en la sección de configuración de su     aplicación dentro del portal de desarrolladores.
+nro_document | String | Si | Es el número de documento de la factura. Ejemplo F001-00002321
+date | String | Si | La fecha de cuando se emitio la factura. ``Ejemplo 23-03-2018``.
+token_app | String | Si | Su clave de aplicación. Puede encontrar su ``token_user`` en la sección de configuración de su     aplicación dentro del portal de desarrolladores.
 title | String | Si | El título de la notificación.
 message | String | Si | El contenido de la notificación. Es el detalle de la notificación.
 
