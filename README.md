@@ -8,15 +8,18 @@ Los documentos elétronicos que puede enviar son:
 * Nota de Crédito (muy pronto)
 * Nota de Debito (muy pronto)
 
-## Configuración
-Para poder empezar a enviar sus documentos eléctronicos tiene que crearse una cuenta en [facturaya.pe](https://facturate.pe), validar tu cuenta y obtener el **Token**.
+### Configuración
+Para poder empezar a enviar sus documentos eléctronicos tiene que crearse una cuenta en [facturaya.pe](https://facturate.pe), validar tu cuenta y obtener el **Token**
 
+### Seguridad
+Para efectos de seguridad se ha implementado el método **Token**, para poder hacer cualquier petición HTTP al servidor de [facturaya.pe](https://facturate.pe) tienes que adjuntar el token de esta manera. 
 
-## Enviar Factura y boleta eléctronica
+### Enviar una factura eléctronica
+> Para obtener las urls de envío, tiene que ir al panel de configuración de su cuenta. Yo en este usare una cuenta llamada **demo**.
 
 Endpoint | Método HTTP | Parametros
 ------------ | ------------- | ------------
-https://{tienda}.facturate.demo/api/v1/invoice/efactura/ | POST | token_user, token_app, title, message
+https://demo.facturate.pe/api/v1/invoice/efactura/ | POST | token_user, token_app, title, message
 
 ## Parametros
 
