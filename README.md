@@ -29,13 +29,13 @@ https://demo.facturate.pe/api/v1/invoice/efactura/ | POST | nro_document, date, 
 
 ## Parametros
 
-Nombre de parámetro | Tipo | Obligatorio | Descripcion
------------- | ------------- | ------------ | ----------
-nro_document | String | Si | Es el número de documento de la factura. Ejemplo F001-00002321
-date | String | Si | La fecha de cuando se emitio la factura. ``Ejemplo 23-03-2018``.
-token_app | String | Si | Su clave de aplicación. Puede encontrar su ``token_user`` en la sección de configuración de su     aplicación dentro del portal de desarrolladores.
-title | String | Si | El título de la notificación.
-message | String | Si | El contenido de la notificación. Es el detalle de la notificación.
+Nombre de parámetro | Formato | Tipo | Obligatorio | Descripcion 
+------------ | ------------- | ------------- | ------------- | -------------
+nro_document | FXXX-XXXXXXXX| String | Si | Es el número de documento de la factura. Ejemplo F001-00002321
+date | MM-DD-YYY | String | Si | La fecha de cuando se emitio la factura. ``Ejemplo 23-03-2018``.
+type_receipt | A4 or Ticket| String | Si | Módelo de documento a imprimir o enviar a correo eléctronico.
+method_name | Efectivo, Visa, Cheque, Deposito a cuenta | String | Si | Por que medio de pago se cancelo la factura.
+invoice_type | 01 | String | Si | Tipo de comprobante, ```01 es de una factura```.
 
 ## Enviando notificaciones
 
