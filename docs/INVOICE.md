@@ -12,8 +12,8 @@ https://demo.facturate.pe/api/v1/invoice/efactura/ | POST | nro_document, date, 
 
 Nombre | Formato | Tipo | Requerido | Descripción 
 ------------ | ------------- | ------------- | ------------- | -------------
-nro_document | FXXX-XXXXXXXX| String | Si | Es el número de documento de la factura. Ejemplo F001-00002321
-date | MM-DD-YYY | String | Si | La fecha de cuando se emitio la factura. ``Ejemplo 23-03-2018``.
+nro_document | FXXX-XXXXXXXX| String | Si | Es el número de documento de la factura.
+date | MM-DD-YYY | String | Si | La fecha de cuando se emitio la factura.
 type_receipt | A4 or Ticket| String | Si | Módelo de documento a imprimir o enviar a correo eléctronico.
 method_name | Efectivo, Visa, Cheque, Deposito a cuenta | String | Si | Por que medio de pago se cancelo la factura.
 invoice_type | 01 | String | Si | Tipo de comprobante, ```01 es de una Factura y 03 es una Boleta```.
