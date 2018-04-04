@@ -15,6 +15,6 @@ address | any| String | Si | Es obligatorio si es una factura
 
 #### CÓDIGOS SUNAT
 
-* Tipo documento
+* Tipos de documentos de identidad
 
 ![Tipo documento](images/additional_account_id.png)
