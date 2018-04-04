@@ -10,4 +10,4 @@ type_igv | any | String | No | Código del impuesto
 description | any | String | No | Nombre del producto
 system_id | any| String | Si | id del producto en tu sistema
 correlative | any| String | Si | Correlativo en la venta
-type | any| String | Si | Tipo de producto según Sunat
+type | any| String | Si | Bienes:2001, Servicios:2002, Contratos:2003
