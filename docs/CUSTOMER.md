@@ -13,7 +13,7 @@ address | any| String | Si | Es obligatorio si es una factura
 
 
 
-#### DATOS SUNAT
+#### CÓDIGOS SUNAT
 
 * Tipo documento
 
