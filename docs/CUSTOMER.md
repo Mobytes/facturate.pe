@@ -15,4 +15,4 @@ address | any| String | Si | Es obligatorio si es una factura
 
 #### CÓDIGOS SUNAT
 
-* Tipos de documentos de identidad 
+* Tipos de documentos de identidad visita el catálogo de la Sunat [Catálogo de códigos de Sunat](docs/catalogo-codigo.pdf)
