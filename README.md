@@ -18,7 +18,8 @@ Para efectos de seguridad se ha implementado el método **Token**, para poder ha
 Authorization: <type> <credentials>
 ```
 
-> Para obtener las urls de envío, tiene que ir al panel de configuración de su cuenta en [facturaya.pe](https://facturate.pe). Para efectos de este tutorial una cuenta llamada **demo**.
+>Para obtener las urls de envío, tiene que ir al panel de configuración de su cuenta en [facturaya.pe](https://facturate.pe). Para efectos de este tutorial usare una cuenta llamada **demo**.
+
 
 ### Enviar una factura eléctronica
 
