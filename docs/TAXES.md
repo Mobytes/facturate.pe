@@ -16,7 +16,7 @@ Código | Descripción | UN/ECE 5153- Duty or tax or fee type name code
 2000 | ISC IMPUESTO SELECTIVO AL CONSUMO | EXC
 9999 | OTROS CONCEPTOS DE PAGO | OTH
 
-#### Ejemplo:
+##### Ejemplos:
 
 * Es obligatorio, si no tiene IGV el **tax_total** será **0.00**
 ```js
