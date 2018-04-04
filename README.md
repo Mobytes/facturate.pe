@@ -41,11 +41,22 @@ discount | 23.56 | Double(18,2) | Si | Descuento por la venta
 amount_total | 134.90 | Double(18,2) | Si | Monto total de la venta
 customer | document, client_id, type_document, business_name, telephone, email, address | Array | Si | Datos del cliente
 taxes | []  | Array | Si | Impuestos
-items | [] | Array | Si | Productos de la venta
+items | ['quantity', 'price', 'price_tax', 'tax_total_item', 'tax_unit_item', 'type_igv', 'description', 'system_id', 'correlative', 'type'] | Array | Si | Productos de la venta
 
 ## Enviando notificaciones
 
-
+```
+            'quantity': product['quantity'],
+            'price': product['price_detail'],
+            'price_tax': product['price_detail'] + product['price_igv_detail'],
+            'tax_total_item': convert_to_decimal(product['price_igv_detail'] * product['quantity']),
+            'tax_unit_item': convert_to_decimal(product['price_igv_detail']),
+            'type_igv': EXONERADO_IGV,
+            'description': product['description'],
+            'system_id': product['barcode'],
+            'correlative': count,
+            'type': product['product_type']['sunat_code']
+```
 ### PHP
 ```php
 curl_setopt_array($ch = curl_init(), array(
