@@ -21,11 +21,11 @@ Authorization: <type> <credentials>
 >Para obtener las urls de envío, tiene que ir al panel de configuración de su cuenta en [facturaya.pe](https://facturate.pe). Para efectos de este tutorial usare una cuenta llamada **demo**.
 
 
-### Enviar una factura eléctronica
+## Enviar una factura eléctronica
 
 Endpoint | Método HTTP | Parametros
 ------------ | ------------- | ------------
-https://demo.facturate.pe/api/v1/invoice/efactura/ | POST | token_user, token_app, title, message
+https://demo.facturate.pe/api/v1/invoice/efactura/ | POST | nro_document, date, type_receipt, method_name, invoice_type, customer, currency, taxes, discount, amount_total, items
 
 ## Parametros
 
