@@ -8,7 +8,7 @@ Endpoint | Método HTTP | Parametros
 ------------ | ------------- | ------------
 https://demo.facturate.pe/api/v1/invoice/efactura/ | POST | nro_document, date, type_receipt, method_name, invoice_type, customer, currency, taxes, discount, amount_total, items
 
-## Parametros
+## Parámetros
 
 Nombre | Formato | Tipo | Requerido | Descripción 
 ------------ | ------------- | ------------- | ------------- | -------------
