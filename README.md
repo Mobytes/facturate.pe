@@ -43,20 +43,12 @@ customer | document, client_id, type_document, business_name, telephone, email, 
 taxes | []  | Array | Si | Impuestos
 items | ['quantity', 'price', 'price_tax', 'tax_total_item', 'tax_unit_item', 'type_igv', 'description', 'system_id', 'correlative', 'type'] | Array | Si | Productos de la venta
 
-## Enviando notificaciones
+#### Customer
+Nombre de parámetro | Formato | Tipo | Obligatorio | Descripcion 
+------------ | ------------- | ------------- | ------------- | -------------
+nro_document | FXXX-XXXXXXXX| String | Si | Es el número de documento de la factura. Ejemplo F001-00002321
 
-```
-            'quantity': product['quantity'],
-            'price': product['price_detail'],
-            'price_tax': product['price_detail'] + product['price_igv_detail'],
-            'tax_total_item': convert_to_decimal(product['price_igv_detail'] * product['quantity']),
-            'tax_unit_item': convert_to_decimal(product['price_igv_detail']),
-            'type_igv': EXONERADO_IGV,
-            'description': product['description'],
-            'system_id': product['barcode'],
-            'correlative': count,
-            'type': product['product_type']['sunat_code']
-```
+
 ### PHP
 ```php
 curl_setopt_array($ch = curl_init(), array(
