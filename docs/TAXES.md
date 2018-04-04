@@ -1,5 +1,45 @@
-#### Taxes
-Nombre de parámetro | Formato | Tipo | Obligatorio | Descripcion 
+### Taxes
+Es un array de los impuestos de la venta.
+
+
+Nombre | Formato | Tipo | Obligatorio | Descripción 
 ------------ | ------------- | ------------- | ------------- | -------------
 tax_total | X.XX| Double(18,2) | Si | Es el total del impuesto
 tribute_code | XXXX | String | Si | El el código del impuesto en la Sunat, IGV(1000) o ISC(1003)
+
+
+#### Ejemplo:
+
+* Es obligatorio, si no tiene IGV el **tax_total** será **0.00**
+```js
+    [
+        {
+            'tax_total': 23.2,
+            'tribute_code': '1000'
+        }
+    ]
+```
+
+* Cuando solo tiene ISC, no es obligatorio ponerlo
+```js
+    [
+        {
+            'tax_total': 12.2,
+            'tribute_code': '1003'
+        }
+    ]
+```
+
+* Cuando tiene IGV y ISC
+```js
+    [
+        {
+            'tax_total': 23.2,
+            'tribute_code': '1000'
+        },
+        {
+            'tax_total': 12.2,
+            'tribute_code': '1003'
+        }
+    ]
+```
