@@ -3,7 +3,7 @@ La API REST le permite interactuar con **FacturaYa.pe** para que pueda enviar su
 
 Los documentos elétronicos que puede enviar son:
 
-* [Factura eléctronica](docs/FATURA.md)
+* [Factura eléctronica](docs/FACTURA.md)
 * Boleta eléctronica
 * Comunicación de baja: factura o boleta elécronica
 * Nota de Crédito (muy pronto)
