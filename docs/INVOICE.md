@@ -149,6 +149,7 @@ response = query.post('https://demo.facturate.pe/api/v1/invoice/efactura/' ,
 ```
 
 ## Manejo de respuesta
+> El parámetro **voucher_id** es el identificador del documento en nuestra plataforma [facturaya.pe](https://facturate.pe), se tiene que guardar en su base de datos para próximas operaciones sobre ese documento.
 
 ### Envío éxitoso
 
