@@ -2,7 +2,7 @@
 >Para obtener las urls de envío, tiene que ir al panel de configuración de su cuenta en [facturaya.pe](https://facturate.pe). Para efectos de este tutorial usare una cuenta llamada **demo**.
 
 
-## Enviar una factura eléctronica
+## Enviar una Factura y Boleta eléctronica
 
 Endpoint | Método HTTP | Parametros
 ------------ | ------------- | ------------
