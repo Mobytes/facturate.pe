@@ -12,11 +12,11 @@ https://demo.facturate.pe/api/v1/invoice/efactura/ | POST | nro_document, date, 
 
 Nombre | Formato | Tipo | Requerido | Descripción 
 ------------ | ------------- | ------------- | ------------- | -------------
-nro_document | FXXX-XXXXXXXX| String | Si | Es el número de documento de la factura.
+nro_document | FXXX-XXXXXXXX ó BXXX-XXXXXXXX | String | Si | Es el número de documento de la factura.
 date | YYYY-MM-DD | String | Si | La fecha de cuando se emitio la factura.
-type_receipt | A4 or Ticket| String | Si | Módelo de documento a imprimir o enviar a correo eléctronico.
+type_receipt | A4 or Ticket | String | Si | Módelo de documento a imprimir o enviar a correo eléctronico.
 method_name | Efectivo, Visa, Cheque, Deposito a cuenta | String | Si | Por que medio de pago se cancelo la factura.
-invoice_type | 01 | String | Si | **Catálogo No. 01 en el** [Catálogo de códigos de Sunat](catalogo-de-codigos.pdf) para el tipo de documento enviado. 
+invoice_type | 01 ó 03 | String | Si | **Catálogo No. 01 en el** [Catálogo de códigos de Sunat](catalogo-de-codigos.pdf) para el tipo de documento enviado. 
 currency | PEN, USD | String | Si | **Catálogo No. 02 en el** [Catálogo de códigos de Sunat](catalogo-de-codigos.pdf) para el Códigos de tipo de monedas.
 discount |  | Double(18,2) | Si | Descuento por la venta
 amount_total |  | Double(18,2) | Si | Monto total de la venta
