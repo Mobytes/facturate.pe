@@ -1,7 +1,7 @@
 #### Items
 Los items de la factura es un array de estos parametros
 
-Nombre de parámetro | Formato | Tipo | Obligatorio | Descripcion 
+Nombre de parámetro | Formato | Tipo | Obligatorio | Descripción 
 ------------ | ------------- | ------------- | ------------- | -------------
 quantity |  | int | Si | Es la cantidad de productos vendidos.
 price |  | Double(18,2) | Si | Es el precio sin impuesto.
