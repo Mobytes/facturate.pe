@@ -42,5 +42,5 @@ type | any| String | Si | Bienes:2001, Servicios:2002, Contratos:2003
               'correlative': 2, 
               'type': '2002'
             }
-         ],
+         ]
 ```
