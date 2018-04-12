@@ -18,8 +18,8 @@ type_receipt | A4 or Ticket| String | Si | Módelo de documento a imprimir o env
 method_name | Efectivo, Visa, Cheque, Deposito a cuenta | String | Si | Por que medio de pago se cancelo la factura.
 invoice_type | 01 | String | Si | **Catálogo No. 01 en el** [Catálogo de códigos de Sunat](catalogo-de-codigos.pdf) para el tipo de documento enviado. 
 currency | PEN, USD | String | Si | **Catálogo No. 02 en el** [Catálogo de códigos de Sunat](catalogo-de-codigos.pdf) para el Códigos de tipo de monedas.
-discount | XX.XX | Double(18,2) | Si | Descuento por la venta
-amount_total | XXX.XX | Double(18,2) | Si | Monto total de la venta
+discount |  | Double(18,2) | Si | Descuento por la venta
+amount_total |  | Double(18,2) | Si | Monto total de la venta
 customer | [CUSTOMER](CUSTOMER.md) | Array | Si | Cliente de la venta
 taxes | [TAXES](TAXES.md) | Array | Si | Impuestos de la venta
 items | [ITEMS](ITEMS.md) | Array | Si | Productos de la venta
