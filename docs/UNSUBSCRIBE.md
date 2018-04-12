@@ -1,5 +1,5 @@
 
->La **Comunicación de Baja** se hace con el **voucher_id** guardado en tu base de datos.
+>La **Comunicación de Baja** se hace con el identificador **voucher_id** que se ha guardado en tu base de datos.
 
 
 ## Enviar una Comunicación de Baja
