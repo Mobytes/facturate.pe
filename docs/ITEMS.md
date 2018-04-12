@@ -15,8 +15,8 @@ correlative | any| int | Si | Correlativo en la venta
 type | any| String | Si | Bienes:2001, Servicios:2002, Contratos:2003
 
 
-##### Ejemplo:
-```json
+* Ejemplo:
+```js
 'items': [
             {
               'quantity': 2.00, 
