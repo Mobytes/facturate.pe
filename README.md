@@ -13,8 +13,7 @@ Authorization: <type> <credentials>
 
 Los documentos elétronicos que puede enviar son:
 
-* [Factura eléctronica](docs/INVOICE.md)
-* [Boleta eléctronica](docs/RECEIPT.md)
+* [Factura y Boleta eléctronica](docs/INVOICE.md)
 * [Comunicación de baja](docs/UNSUBSCRIBE.md)
 * Nota de Crédito (muy pronto)
 * Nota de Debito (muy pronto)
