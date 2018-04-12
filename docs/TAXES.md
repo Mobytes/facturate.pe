@@ -5,8 +5,8 @@ Es un array de los impuestos de la venta.
 
 Nombre | Formato | Tipo | Obligatorio | Descripción 
 ------------ | ------------- | ------------- | ------------- | -------------
-tax_total | X.XX| Double(18,2) | Si | Es el total del impuesto
-tribute_code | XXXX | String | Si | **Catálogo No. 05 en el** [Catálogo de códigos de Sunat](catalogo-de-codigos.pdf) para el tipo de tributos.
+tax_total |  | Double(18,2) | Si | Es el total del impuesto
+tribute_code |  | String | Si | **Catálogo No. 05 en el** [Catálogo de códigos de Sunat](catalogo-de-codigos.pdf) para el tipo de tributos.
 
 
 ##### Ejemplos:
