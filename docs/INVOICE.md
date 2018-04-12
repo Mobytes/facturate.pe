@@ -24,7 +24,7 @@ customer | [CUSTOMER](CUSTOMER.md) | Array | Si | Cliente de la venta.
 taxes | [TAXES](TAXES.md) | Array | Si | Impuestos de la venta.
 items | [ITEMS](ITEMS.md) | Array | Si | Productos de la venta.
 
-### Petición HTTPS
+### Enviar Factura
 ```js
 {
   'nro_document': 'F001-00000047', 
@@ -74,6 +74,49 @@ items | [ITEMS](ITEMS.md) | Array | Si | Productos de la venta.
               'correlative': 2, 
               'type': '2002'
             }
+           ], 
+  'discount': 0.00
+}
+```
+
+### Enviar Boleta
+```js
+{
+  'nro_document': 'B001-00000308', 
+  'date': '2018-04-04', 
+  'invoice_type': '03', 
+  'method_name': 'Efectivo', 
+  'amount_total': 16.00, 
+  'type_receipt': 'Ticket', 
+  'currency': 'PEN', 
+  'taxes': [
+              {
+              'tax_total': 0.00, 
+              'tribute_code': '1000'
+              }
+            ], 
+  'customer': {
+                'document': '-', 
+                'client_id': 1, 
+                'type_document': '-', 
+                'business_name': 'Cliente', 
+                'telephone': '-', 
+                'email': '', 
+                'address': '-'
+              }, 
+  'items': [
+              {
+                'quantity': 4.00, 
+                'price': 4.00, 
+                'price_tax': 4.00, 
+                'tax_total_item': 0.00, 
+                'tax_unit_item': 0.00, 
+                'type_igv': '20', 
+                'description': 'GASEOSA INCAK', 
+                'system_id': '7750002000164', 
+                'correlative': 1, 
+                'type': '2001'
+              }
            ], 
   'discount': 0.00
 }
