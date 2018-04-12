@@ -122,7 +122,49 @@ items | [ITEMS](ITEMS.md) | Array | Si | Productos de la venta.
 }
 ```
 
-### Respuesta
+> Llamaremos **data** a los datos que enviaremos.
+
+### PHP
+
+```php
+curl_setopt_array($ch = curl_init(), array(
+  CURLOPT_URL => "https://demo.facturate.pe/api/v1/invoice/efactura/",
+  CURLOPT_POSTFIELDS => data,
+  CURLOPT_SAFE_UPLOAD => true,
+));
+curl_exec($ch);
+curl_close($ch);
+```
+
+### Python
+```py
+#!/usr/bin/python 
+import json, httplib 
+connection = httplib.HTTPSConnection('https://demo.facturate.pe', 443) 
+connection.connect() 
+connection.request('POST', '/api/v1/invoice/efactura/', json.dumps(data), { "Content-Type": "application/json" } ) 
+result = json.loads(connection.getresponse().read())
+print result
+```
+
+### Ruby
+
+```ruby
+require "net/https"
+
+url = URI.parse("https://demo.facturate.pe/api/v1/invoice/efactura/")
+req = Net::HTTP::Post.new(url.path)
+req.set_form_data(data)
+res = Net::HTTP.new(url.host, url.port)
+res.use_ssl = true
+res.verify_mode = OpenSSL::SSL::VERIFY_PEER
+res.start {|http| http.request(req) }
+```
+
+## Manejo de respuesta
+
+### Envío éxitoso
+
 ```js
 {
   'date': '04/04/2018 05:08 PM', 
@@ -215,70 +257,6 @@ items | [ITEMS](ITEMS.md) | Array | Si | Productos de la venta.
 }
 ```
 
-> Llamaremos **data** a los datos que enviaremos.
-
-### PHP
-
-```php
-curl_setopt_array($ch = curl_init(), array(
-  CURLOPT_URL => "https://demo.facturate.pe/api/v1/invoice/efactura/",
-  CURLOPT_POSTFIELDS => **data**,
-  CURLOPT_SAFE_UPLOAD => true,
-));
-curl_exec($ch);
-curl_close($ch);
-```
-
-### Python
-```py
-#!/usr/bin/python 
-import json, httplib 
-connection = httplib.HTTPSConnection('https://pushiner', 443) 
-connection.connect() 
-connection.request('POST', '/api/v1/send_message/', json.dumps({ "token_user": "my_token_user", "token_app": "my_token_app", "title": "mi título", "message": "mi contenido"}), { "Content-Type": "application/json" } ) result = json.loads(connection.getresponse().read())
-print result
-```
-
-### Ruby
-
-```ruby
-require "net/https"
-
-url = URI.parse("https://pushiner.com/api/v1/send_message/")
-req = Net::HTTP::Post.new(url.path)
-req.set_form_data({
-  :token_user => "my token_user",
-  :token_app => "my token_app",
-  :title => "mi título",
-  :message => "mi contenido",
-})
-res = Net::HTTP.new(url.host, url.port)
-res.use_ssl = true
-res.verify_mode = OpenSSL::SSL::VERIFY_PEER
-res.start {|http| http.request(req) }
-```
-
-### Consola
-```sh
-curl -s \
-  --form-string "token_user=abc123" \
-  --form-string "token_app=user123" \
-  --form-string "title=mi título" \
-  --form-string "message=mi contennido" \
-  https://pushiner.com/api/v1/send_message/
-```
-
-## Manejo de respuesta
-
-### Envío éxitoso
-```js
-{
-  "message": "la notificacion fue enviada con éxito",
-  "code": 200,
-  "success": true
-}
-```
-
 ### Envío errado
 ```js
 {
@@ -287,5 +265,3 @@ curl -s \
   "success": false
 }
 ```
-
-[1]: https://github.com/evervasquez/laravel-sendpush
