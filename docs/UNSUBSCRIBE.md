@@ -1,8 +1,8 @@
 
->Para obtener las urls de envío, tiene que ir al panel de configuración de su cuenta en [facturaya.pe](https://facturate.pe). Para efectos de este tutorial usare una cuenta llamada **demo**.
+>La **Comunicación de Baja** se hace con el **voucher_id** guardado en tu base de datos.
 
 
-## Enviar una Factura y Boleta eléctronica
+## Enviar una Comunicación de Baja
 
 Endpoint | Método HTTP | Parametros
 ------------ | ------------- | ------------
