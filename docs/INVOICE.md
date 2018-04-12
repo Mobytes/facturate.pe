@@ -215,24 +215,19 @@ items | [ITEMS](ITEMS.md) | Array | Si | Productos de la venta.
 }
 ```
 
+> Llamaremos **data** a los datos que enviaremos.
+
 ### PHP
+
 ```php
 curl_setopt_array($ch = curl_init(), array(
-  CURLOPT_URL => "https://pushiner/api/v1/send_message/",
-  CURLOPT_POSTFIELDS => array(
-    "token_user" => "my_token_user",
-    "token_app" => "my_token_app",
-    "title" => "mi título",
-    "message" => "hola mundo",
-  ),
+  CURLOPT_URL => "https://demo.facturate.pe/api/v1/invoice/efactura/",
+  CURLOPT_POSTFIELDS => **data**,
   CURLOPT_SAFE_UPLOAD => true,
 ));
 curl_exec($ch);
 curl_close($ch);
 ```
-
-### Laravel
-Sendpush has its library for laravel 5. * [SendPush][1]
 
 ### Python
 ```py
