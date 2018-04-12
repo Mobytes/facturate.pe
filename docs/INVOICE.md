@@ -138,13 +138,13 @@ curl_close($ch);
 
 ### Python
 ```py
-#!/usr/bin/python 
-import json, httplib 
-connection = httplib.HTTPSConnection('https://demo.facturate.pe', 443) 
-connection.connect() 
-connection.request('POST', '/api/v1/invoice/efactura/', json.dumps(data), { "Content-Type": "application/json" } ) 
-result = json.loads(connection.getresponse().read())
-print result
+#!/usr/bin/python
+import requests
+query = requests.Session()
+query.headers.update({'Authorization': 'Token %s' % company.token_facturate})
+query.headers.update({'content-type': 'application/json'})
+response = query.post('https://demo.facturate.pe/api/v1/invoice/efactura/' ,
+                              data=simplejson.dumps(data))
 ```
 
 ### Ruby
