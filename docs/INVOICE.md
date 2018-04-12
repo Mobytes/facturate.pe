@@ -148,20 +148,6 @@ response = query.post('https://demo.facturate.pe/api/v1/invoice/efactura/' ,
                               data=simplejson.dumps(data))
 ```
 
-### Ruby
-
-```ruby
-require "net/https"
-
-url = URI.parse("https://demo.facturate.pe/api/v1/invoice/efactura/")
-req = Net::HTTP::Post.new(url.path)
-req.set_form_data(data)
-res = Net::HTTP.new(url.host, url.port)
-res.use_ssl = true
-res.verify_mode = OpenSSL::SSL::VERIFY_PEER
-res.start {|http| http.request(req) }
-```
-
 ## Manejo de respuesta
 
 ### Envío éxitoso
