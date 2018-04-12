@@ -16,6 +16,9 @@ type | any| String | Si | Bienes:**2001**, Servicios:**2002**, Contratos:**2003*
 
 
 * Ejemplo:
+
+> Este es un ejemplo de 2 productos.
+
 ```js
 'items': [
             {
