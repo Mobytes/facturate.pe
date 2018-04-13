@@ -24,3 +24,22 @@ reason | any | String | Si | Es la razón por que se esta dando de baja el docum
   'reason': 'Se devolvío el dinero', 
 }
 ```
+
+### Manejo de respuesta
+
+* Envio exitoso
+
+```js
+{
+  'unsubscribe': 'Ok',
+  'voucher': data
+}
+```
+
+* Envio errado
+
+```js
+{
+  'error': message
+}
+```
