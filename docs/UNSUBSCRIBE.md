@@ -25,9 +25,9 @@ reason | any | String | Si | Es la razón por que se esta dando de baja el docum
 }
 ```
 
-### Manejo de respuesta
+## Manejo de respuesta
 
-* Envio exitoso
+### Envío éxitoso
 
 ```js
 {
@@ -36,7 +36,7 @@ reason | any | String | Si | Es la razón por que se esta dando de baja el docum
 }
 ```
 
-* Envio errado
+### Envío errado
 
 ```js
 {
