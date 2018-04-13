@@ -122,32 +122,6 @@ items | [ITEMS](ITEMS.md) | Array | Si | Productos de la venta.
 }
 ```
 
-> Llamaremos **data** a los datos que enviaremos.
-
-### PHP
-
-```php
-curl_setopt_array($ch = curl_init(), array(
-  CURLOPT_HTTPHEADER  => array('Authorization: Token ewhifewubidncsidnc343j4nk32jn4jkjndsfnfkdsf'),
-  CURLOPT_URL => "https://demo.facturate.pe/api/v1/invoice/efactura/",
-  CURLOPT_POSTFIELDS => data,
-  CURLOPT_SAFE_UPLOAD => true,
-));
-curl_exec($ch);
-curl_close($ch);
-```
-
-### Python
-```py
-#!/usr/bin/python
-import requests
-query = requests.Session()
-query.headers.update({'Authorization': 'Token %s' % company.token_facturate})
-query.headers.update({'content-type': 'application/json'})
-response = query.post('https://demo.facturate.pe/api/v1/invoice/efactura/' ,
-                              data=simplejson.dumps(data))
-```
-
 ## Manejo de respuesta
 > El parámetro **voucher_id** es el identificador del documento en nuestra plataforma [facturaya.pe](https://facturate.pe), se tiene que guardar en su base de datos para próximas operaciones sobre ese documento.
 
