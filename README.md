@@ -27,6 +27,7 @@ Authorization: <type> <credentials>
 ```php
 curl_setopt_array($ch = curl_init(), array(
   CURLOPT_HTTPHEADER  => array('Authorization: Token ewhifewubidncsidnc343j4nk32jn4jkjndsfnfkdsf'),
+  CURLOPT_HTTPHEADER  => array('content-type: application/json'),
   CURLOPT_URL => "https://demo.facturate.pe/api/v1/invoice/efactura/",
   CURLOPT_POSTFIELDS => data,
   CURLOPT_SAFE_UPLOAD => true,
