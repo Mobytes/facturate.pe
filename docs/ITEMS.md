@@ -25,6 +25,7 @@ type | any| String | Si | Bienes:**2001**, Servicios:**2002**, Contratos:**2003*
               'quantity': 2.00, 
               'price': 4.00, 
               'price_tax': 4.00, 
+              'unit': 'NIU',
               'tax_total_item': 0.00, 
               'tax_unit_item': 0.00, 
               'type_igv': '20', 
@@ -36,7 +37,8 @@ type | any| String | Si | Bienes:**2001**, Servicios:**2002**, Contratos:**2003*
             {
               'quantity': 1.00, 
               'price': 8000.00, 
-              'price_tax': 8000.00, 
+              'price_tax': 8000.00,
+              'unit': 'ZZ',
               'tax_total_item': 0.00, 
               'tax_unit_item': 0.00, 
               'type_igv': '20', 
