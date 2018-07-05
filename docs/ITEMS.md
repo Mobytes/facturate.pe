@@ -6,6 +6,7 @@ Nombre de parámetro | Formato | Tipo | Obligatorio | Descripción
 quantity |  | int | Si | Es la cantidad de productos vendidos.
 price |  | Double(18,2) | Si | Es el precio sin impuesto.
 price_tax |  | Double(18,2) | Si | Es el precio con impuesto.
+unit |  | String | Si | Es código de las unidades de medida.[Ver lista completa](https://docs.google.com/spreadsheets/d/1g4BislVBPrFvyMb0unRyYEHGCtl9UlLCepigaoNak5A/edit#gid=367466330)
 tax_total_item |  | Double(18,2) | No | Impuesto total.
 tax_unit_item |  | Double(18,2) | No | Impuesto por item.
 type_igv |  | String | No | **Catálogo No. 07 en el** [Catálogo de códigos de Sunat](catalogo-de-codigos.pdf) para el tipo de afectación del IGV.
