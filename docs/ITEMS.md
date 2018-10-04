@@ -11,6 +11,7 @@ tax_total_item |  | Double(18,2) | No | Impuesto total.
 tax_unit_item |  | Double(18,2) | No | Impuesto por item.
 type_igv |  | String | No | **Catálogo No. 07 en el** [Catálogo de códigos de Sunat](catalogo-de-codigos.pdf) para el tipo de afectación del IGV.
 description | any | String | No | Nombre del producto.
+detail | any | String | No | Detalle extra en el nombre del producto que se quiera detallar.
 system_id | any| String | Si | id del producto en tu sistema.
 correlative | any| int | Si | Correlativo en la venta.
 type | any| String | Si | Bienes:**2001**, Servicios:**2002**, Contratos:**2003**.
@@ -31,6 +32,7 @@ type | any| String | Si | Bienes:**2001**, Servicios:**2002**, Contratos:**2003*
               'tax_unit_item': 0.00, 
               'type_igv': '20', 
               'description': 'GASEOSA INCAK', 
+              'detail': '', 
               'system_id': '7750002000164', 
               'correlative': 1, 
               'type': '2001'
@@ -44,6 +46,7 @@ type | any| String | Si | Bienes:**2001**, Servicios:**2002**, Contratos:**2003*
               'tax_unit_item': 0.00, 
               'type_igv': '20', 
               'description': 'CONSULTORIA DE EXPEDIENTE TECNICO', 
+              'detail': 'FECHA DE ENERO A FEBRERO',
               'system_id': '7750002000122', 
               'correlative': 2, 
               'type': '2002'
