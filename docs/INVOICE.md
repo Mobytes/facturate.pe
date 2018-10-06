@@ -1,5 +1,5 @@
 
->Para obtener las urls de envío, tiene que ir al panel de configuración de su cuenta en [facturaya.pe](https://facturate.pe). Para efectos de este tutorial usare una cuenta llamada **demo**.
+>Para obtener las urls de envío, tiene que ir al panel de configuración de su cuenta en [facturate.pe](https://facturate.pe). Para efectos de este tutorial usare una cuenta llamada **demo**.
 
 
 ## Enviar una Factura y Boleta eléctronica
@@ -123,7 +123,7 @@ items | [ITEMS](ITEMS.md) | Array | Si | Productos de la venta.
 ```
 
 ## Manejo de respuesta
-> El parámetro **voucher_id** es el identificador del documento en nuestra plataforma [facturaya.pe](https://facturate.pe), se tiene que guardar en su base de datos para próximas operaciones sobre ese documento.
+> El parámetro **voucher_id** es el identificador del documento en nuestra plataforma [facturate.pe](https://facturate.pe), se tiene que guardar en su base de datos para próximas operaciones sobre ese documento.
 
 ### Envío éxitoso
 
