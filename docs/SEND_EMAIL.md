@@ -30,14 +30,14 @@ $data_boleta = array(
     'email' => $_REQUEST['mail_enviar']
 );
 $data_string = json_encode($data_boleta);
-$ch = curl_init('https://artesano.facturate.pe/api/v1/invoice/send_email/');
+$ch = curl_init('https://[store].facturate.pe/api/v1/invoice/send_email/');
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
 curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
 curl_setopt($ch, CURLOPT_POST, 1);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_HTTPHEADER, array(
         'Content-Type: application/json',
-        'Authorization: Token 7bd7bc9ff628669d56fd38526925455',
+        'Authorization: Token 7bd7btoken526925455',
         'Content-Length: ' . strlen($data_string))
 );
 $result = curl_exec($ch);
