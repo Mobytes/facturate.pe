@@ -1,5 +1,5 @@
-# FacturaYa
-La API REST le permite interactuar con **FacturaYa.pe** para que pueda enviar sus documentos eléctronicos por una petición HTTP.
+# FacturatePE
+La API REST le permite interactuar con **facturate.pe** para que pueda enviar sus documentos eléctronicos por una petición HTTP.
 
 Los documentos elétronicos que puede enviar son:
 
