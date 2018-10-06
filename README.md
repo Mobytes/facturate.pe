@@ -25,15 +25,33 @@ Authorization: <type> <credentials>
 ### PHP
 
 ```php
-curl_setopt_array($ch = curl_init(), array(
-  CURLOPT_HTTPHEADER  => array('Authorization: Token ewhifewubidncsidnc343j4nk32jn4jkjndsfnfkdsf'),
-  CURLOPT_HTTPHEADER  => array('content-type: application/json'),
-  CURLOPT_URL => "https://demo.facturate.pe/api/v1/invoice/efactura/",
-  CURLOPT_POSTFIELDS => data,
-  CURLOPT_SAFE_UPLOAD => true,
-));
-curl_exec($ch);
+$data_boleta = array(
+  'nro_document' => $objsunat->nro_comprobante,
+  'date' => $objsunat->fecha,
+  'invoice_type' => $comprobante_id,
+  'method_name' => $objsunat->metodo_pago, //METODO DE PAGO
+  'amount_total' => $objsunat->total,
+  'type_receipt' => "Ticket",
+  'currency' => "PEN", //MONEDA
+  'taxes' => $impuestos, // ARRAY
+  'customer' => $cliente[0], // ARRAY
+  'items' => $articulos, // ARRAY
+  'discount' => $objsunat->descuento
+);
+$data_string = json_encode($data_boleta);
+$ch = curl_init('https://[store].facturate.pe/api/v1/invoice/efactura/');
+curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
+curl_setopt($ch, CURLOPT_POST, 1);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+    'Content-Type: application/json',
+    'Authorization: Token 72637263tokenuyweuywe',
+    'Content-Length: ' . strlen($data_string))
+);
+$result = curl_exec($ch);
 curl_close($ch);
+$data = json_decode($result);
 ```
 
 ### Python
