@@ -1,4 +1,4 @@
-# FacturatePE
+# facturate.pe
 La API REST le permite interactuar con **facturate.pe** para que pueda enviar sus documentos eléctronicos por una petición HTTP.
 
 Los documentos elétronicos que puede enviar son:
