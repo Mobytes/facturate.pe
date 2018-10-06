@@ -11,10 +11,10 @@ Los documentos elétronicos que puede enviar son:
 
 
 ### Configuración
-Para poder empezar a enviar sus documentos eléctronicos tiene que crearse una cuenta en [facturaya.pe](https://facturate.pe), validar tu cuenta y obtener el **Token**
+Para poder empezar a enviar sus documentos eléctronicos tiene que crearse una cuenta en [facturate.pe](https://facturate.pe), validar tu cuenta y obtener el **Token**
 
 ### Seguridad
-Para efectos de seguridad se ha implementado el método **Token**, para poder hacer cualquier petición HTTP al servidor de [facturaya.pe](https://facturate.pe). Tienes que adjuntar el token al header de esta manera. 
+Para efectos de seguridad se ha implementado el método **Token**, para poder hacer cualquier petición HTTP al servidor de [facturate.pe](https://facturate.pe). Tienes que adjuntar el token al header de esta manera. 
 
 ```py
 Authorization: <type> <credentials>
