@@ -7,6 +7,7 @@ Los documentos elétronicos que puede enviar son:
 * [Comunicación de baja](docs/UNSUBSCRIBE.md)
 * Nota de Crédito (muy pronto)
 * Nota de Debito (muy pronto)
+* [Enviar email](docs/SEND_EMAIL.md)
 
 
 ### Configuración
