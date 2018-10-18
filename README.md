@@ -55,3 +55,38 @@ query.headers.update({'content-type': 'application/json'})
 response = query.post('https://demo.facturate.pe/api/v1/invoice/efactura/' ,
                               data=simplejson.dumps(data))
 ```
+
+### Imprimir en javascript
+```js
+var printPdfBase64 = function (pdf_base64) {
+
+function dataURItoBlob(dataURI) {
+    var byteString;
+    if (dataURI.split(',')[0].indexOf('base64') >= 0)
+        byteString = atob(dataURI.split(',')[1]);
+    else
+        byteString = unescape(dataURI.split(',')[1]);
+
+    // separate out the mime component
+    var mimeString = dataURI.split(',')[0].split(':')[1].split(';')[0];
+
+    // write the bytes of the string to a typed array
+    var ia = new Uint8Array(byteString.length);
+    for (var i = 0; i < byteString.length; i++) {
+        ia[i] = byteString.charCodeAt(i);
+    }
+    return new Blob([ia], {type: mimeString});
+}
+
+// console.log(pdf_base64);
+var data_document = "data:application/pdf;base64," + pdf_base64;
+var preBlob = dataURItoBlob(data_document);
+var pdfFile = new Blob([preBlob], {type: 'application/pdf'});
+var pdfUrl = URL.createObjectURL(pdfFile);
+const iframe = document.createElement('iframe');
+iframe.style.display = 'none';
+iframe.src = pdfUrl;
+document.body.appendChild(iframe);
+iframe.contentWindow.print();
+};
+```
