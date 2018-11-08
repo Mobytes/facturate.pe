@@ -15,7 +15,7 @@ voucher_id |  | String | Si | Es el identificador del voucher(CPE) en la platafo
 
 ## Lenguajes
 
-#### PHP
+#### Python
 ```py
 query = requests.Session()
 query.headers.update({'Authorization': 'Token %s' % <token_facturate> })
