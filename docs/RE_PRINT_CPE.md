@@ -3,7 +3,7 @@ La respuesta es un documento PDF
 
 Endpoint | Método HTTP | Parametros
 ------------ | ------------- | ------------
-https://[store].facturate.pe/api/v1/invoice/invoice_view/<voucher_id> | GET | voucher_id
+https://demo.facturate.pe/api/v1/invoice/invoice_view/<voucher_id> | GET | voucher_id
 
 
 ## Detalle de los Parámetros
