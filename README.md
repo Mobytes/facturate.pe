@@ -8,6 +8,7 @@ Los documentos elétronicos que puede enviar son:
 * Nota de Crédito (muy pronto)
 * Nota de Debito (muy pronto)
 * [Enviar email](docs/SEND_EMAIL.md)
+* [Re-imprimir CPE](docs/RE_PRINT_CPE.md)
 
 
 ### Configuración
