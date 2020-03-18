@@ -14,7 +14,7 @@ Nombre | Formato | Tipo | Requerido | Descripción
 ------------ | ------------- | ------------- | ------------- | -------------
 nro_document | FXXX-XXXXXXXX ó BXXX-XXXXXXXX | String | Si | Es el número de documento.
 date | YYYY-MM-DD | String | Si | La fecha de cuando se emitio la factura.
-type_receipt | A4 or Ticket | String | Si | Módelo de documento a imprimir o enviar a correo eléctronico.
+type_receipt | A4, A5 or Ticket | String | Si | Módelo de documento a imprimir o enviar a correo eléctronico.
 method_name | Efectivo, Visa, Cheque, Deposito a cuenta | String | Si | Por que medio se hizo el pago.
 invoice_type | 01 ó 03 | String | Si | **Catálogo No. 01 en el** [Catálogo de códigos de Sunat](catalogo-de-codigos.pdf) para el tipo de documento enviado. 
 currency | PEN, USD | String | Si | **Catálogo No. 02 en el** [Catálogo de códigos de Sunat](catalogo-de-codigos.pdf) para el Códigos de tipo de monedas.
