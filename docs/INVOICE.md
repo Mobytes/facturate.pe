@@ -37,7 +37,7 @@ items | [ITEMS](ITEMS.md) | Array | Si | Productos de la venta.
   'taxes': [
               {
                 'tax_total': 0.00, 
-                'tribute_code': '1000'
+                'tribute_code': '9997'
               }
            ], 
   'customer': {
