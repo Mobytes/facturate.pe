@@ -17,7 +17,7 @@ email | any | String | Si | Es el email a donde se enviara el documento.
 ```js
 {
   'voucher_id': '0822ed63-68cd-47a7-b804-b8d2aefa0ab9', 
-  'reason': 'Se devolvío el dinero', 
+  'email': 'ejemplo@example.com', 
 }
 ```
 
