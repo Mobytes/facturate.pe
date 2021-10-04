@@ -15,12 +15,18 @@ Nombre | Formato | Tipo | Requerido | Descripción
 nro_document | FXXX-XXXXXXXX ó BXXX-XXXXXXXX | String | Si | Es el número de documento.
 date | YYYY-MM-DD | String | Si | La fecha de cuando se emitio la factura.
 type_receipt | A4, A5 or Ticket | String | Si | Módelo de documento a imprimir o enviar a correo eléctronico.
-method_name | Efectivo, Visa, Cheque, Deposito a cuenta | String | Si | Por que medio se hizo el pago.
+method_name | Efectivo, Visa, Cheque, Deposito a cuenta, Credito | String | Si | Por que medio se hizo el pago.
+expiration_credit | YYYY-MM-DD | String | No/Si(method_name es Credito) | La fecha de expiración del crédito. Es obligatorio en el caso que una venta tenga su método de pago como crédito y debe ser diferente a la fecha de la emisión del comprobante.
 invoice_type | 01 ó 03 | String | Si | **Catálogo No. 01 en el** [Catálogo de códigos de Sunat](catalogo-de-codigos.pdf) para el tipo de documento enviado. 
 currency | PEN, USD | String | Si | **Catálogo No. 02 en el** [Catálogo de códigos de Sunat](catalogo-de-codigos.pdf) para el Códigos de tipo de monedas.
 discount |  | Double(18,2) | Si | Descuento por la venta.
-amount_total |  | Double(18,2) | Si | Monto total de la venta.
+amount_total |  | Double(18,2) | Si | Monto neto total de la venta. Valor que no toma en cuenta el impuesto y el descuento.
+type_operation_code | 0101, 0200, 0401 | String | Si | **Catálogo No. 51 en el** [Catálogo de códigos de Sunat](anexo-244-2019.pdf) para el Códigos de tipo de operación.
+seller |  | String | No |  Nombre usuario que realiza el comprobante.
 customer | [CUSTOMER](CUSTOMER.md) | Array | Si | Cliente de la venta.
+observation |  | String | No | Observación asociada al comprobante.
+guides_remission |  | String | No | Guía de remisión del remitente. Se recomienda que cumpla con el criterio de la sunat sobre este tipo de documento.
+guides_carrier  |   | String | No | Guía de remisión transportista. Se recomienda que cumpla con el criterio de la sunat sobre este tipo de documento.
 taxes | [TAXES](TAXES.md) | Array | Si | Impuestos de la venta.
 items | [ITEMS](ITEMS.md) | Array | Si | Productos de la venta.
 
