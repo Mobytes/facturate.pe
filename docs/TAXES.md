@@ -11,7 +11,8 @@ tribute_code | 1000, 2000, 7152, 9995, 9996, 9997, 9998 | String | Si | **Catál
 
 ##### Ejemplos:
 
-* Todos los tipos de impuestos deben de sumarse en su propio apartado. *
+* Se suma el total del gravado. En los otros casos, el total del impuesto es cero, pero debe enviarse el tipo de impuesto.*
+* Cuando es gravado.
 ```js
     [
         {
@@ -25,23 +26,13 @@ tribute_code | 1000, 2000, 7152, 9995, 9996, 9997, 9998 | String | Si | **Catál
 ```js
     [
         {
-            'tax_total': 15.0000,
+            'tax_total': 0.0000,
             'tribute_code': '9997'
         }
     ]
 ```
 
-* Cuando es ISC.
-```js
-    [
-        {
-            'tax_total': 12.2000,
-            'tribute_code': '2000'
-        }
-    ]
-```
-
-* Cuando tiene IGV y ISC
+* Cuando es Gravado y Exonerado.
 ```js
     [
         {
@@ -49,8 +40,8 @@ tribute_code | 1000, 2000, 7152, 9995, 9996, 9997, 9998 | String | Si | **Catál
             'tribute_code': '1000'
         },
         {
-            'tax_total': 12.2000,
-            'tribute_code': '2000'
+            'tax_total': 0.0000,
+            'tribute_code': '9997'
         }
     ]
 ```
