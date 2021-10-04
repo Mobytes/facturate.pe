@@ -28,6 +28,7 @@ observation |  | String | No | Observación asociada al comprobante.
 guides_remission |  | String | No | Guía de remisión del remitente. Se recomienda que cumpla con el criterio de la sunat sobre este tipo de documento.
 guides_carrier  |   | String | No | Guía de remisión transportista. Se recomienda que cumpla con el criterio de la sunat sobre este tipo de documento.
 taxes | [TAXES](TAXES.md) | Array | Si | Impuestos de la venta.
+total_taxes |  | Double(18,2)| Si | Sumatoria total del igv de cada uno de los productos. Al no existir IGV, el valor es cero.
 items | [ITEMS](ITEMS.md) | Array | Si | Productos de la venta.
 
 ### Enviar Factura
