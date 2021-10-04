@@ -32,57 +32,209 @@ total_taxes |  | Double(18,2)| Si | Sumatoria total del igv de cada uno de los p
 items | [ITEMS](ITEMS.md) | Array | Si | Productos de la venta.
 
 ### Enviar Factura
+Gravado
 ```js
 {
-  'nro_document': 'F001-00000047', 
-  'date': '2018-04-04', 
-  'invoice_type': '01', 
-  'method_name': 'Efectivo', 
-  'amount_total': 8008.00, 
-  'type_receipt': 'A4', 
-  'currency': 'PEN', 
+  'nro_document': 'F001-00001287',
+  'date': '2021-10-04',
+  'invoice_type': '01',
+  'method_name': 'Efectivo',
+  'amount_total': 36.7796,
+  'type_receipt': 'A4',
+  'currency': 'PEN',
   'taxes': [
-              {
-                'tax_total': 0.00, 
-                'tribute_code': '9997'
-              }
-           ], 
+    {
+      'tax_total': 6.6204,
+      'tribute_code': '1000'
+    }
+  ],
+  'type_operation_code': '0101',
+  'total_taxes': 6.6204,
   'customer': {
-                'client_id': 3, 
-                'document': '20600767765', 
-                'type_document': '6', 
-                'business_name': 'EL CULTURAL S.A.C', 
-                'telephone': None, 
-                'email': None, 
-                'address': 'JR. SOFIA DELGADO 234'
-              }, 
+    'client_id': 3,
+    'document': '20600629922',
+    'type_document': '6',
+    'business_name': 'MOBYTES SAC',
+    'telephone': null,
+    'email': null,
+    'address': 'JR. 16 DE MAYO NRO 746 SAN MARTIN - SAN MARTIN - MORALES'
+  },
   'items': [
-            {
-              'quantity': 2.00, 
-              'price': 4.00, 
-              'price_tax': 4.00, 
-              'tax_total_item': 0.00, 
-              'tax_unit_item': 0.00, 
-              'type_igv': '20', 
-              'description': 'GASEOSA INCAK', 
-              'system_id': '7750002000164', 
-              'correlative': 1, 
-              'type': '2001'
-            }, 
-            {
-              'quantity': 1.00, 
-              'price': 8000.00, 
-              'price_tax': 8000.00, 
-              'tax_total_item': 0.00, 
-              'tax_unit_item': 0.00, 
-              'type_igv': '20', 
-              'description': 'CONSULTORIA DE EXPEDIENTE TECNICO', 
-              'system_id': '7750002000122', 
-              'correlative': 2, 
-              'type': '2002'
-            }
-           ], 
-  'discount': 0.00
+    {
+      'quantity': 1.0000,
+      'price': 4.2373,
+      'price_tax': 5.0000,
+      'tax_total_item': 0.76,
+      'tax_unit_item': 0.7627,
+      'description': 'vaso descartable 6 OZ',
+      'system_id': '7750020006218',
+      'correlative': 1,
+      'discount': '0.0000',
+      'type': '2001',
+      'igv_percentage': '18.0000',
+      'unit': 'NIU',
+      'unit_pdf': 'UND',
+      'sunat_tax_code': '10',
+      'isc_unit_item': 0.0000,
+      'isc_total_item': 0.00,
+      'isc_code': null,
+      'isc_percentage': 0,
+      'icbper': 0.00,
+      'referencial_unit_value': 0.00
+    },
+    {
+      'quantity': 1.0000,
+      'price': 25.4237,
+      'price_tax': 30.0000,
+      'tax_total_item': 4.58,
+      'tax_unit_item': 4.5763,
+      'description': 'DESPACHO A AGENCIA',
+      'system_id': '7750020034617',
+      'correlative': 2,
+      'discount': '0.0000',
+      'type': '2002',
+      'igv_percentage': '18.0000',
+      'unit': 'ZZ',
+      'unit_pdf': 'UND',
+      'sunat_tax_code': '10',
+      'isc_unit_item': 0.0000,
+      'isc_total_item': 0.00,
+      'isc_code': null,
+      'isc_percentage': 0,
+      'icbper': 0.00,
+      'referencial_unit_value': 0.00
+    },
+    {
+      'quantity': 2.0000,
+      'price': 3.5593,
+      'price_tax': 4.2000,
+      'tax_total_item': 1.28,
+      'tax_unit_item': 0.6407,
+      'description': 'YESO CERAMICO',
+      'system_id': '7750020032231',
+      'correlative': 3,
+      'discount': '0.0000',
+      'type': '2001',
+      'igv_percentage': '18.0000',
+      'unit': 'NIU',
+      'unit_pdf': 'UND',
+      'sunat_tax_code': '10',
+      'isc_unit_item': 0.0000,
+      'isc_total_item': 0.00,
+      'isc_code': null,
+      'isc_percentage': 0,
+      'icbper': 0.00,
+      'referencial_unit_value': 0.00
+    }
+  ],
+  'discount': 0.00,
+  'seller': 'NGZ Negosy',
+  'observation': '',
+  'guides_remission': '',
+  'guides_carrier': ''
+}
+```
+
+Exonerado
+```js
+{
+  'nro_document': 'F001-00001287',
+  'date': '2021-10-04',
+  'invoice_type': '01',
+  'method_name': 'Efectivo',
+  'amount_total': 43.4000,
+  'type_receipt': 'A4',
+  'currency': 'PEN',
+  'taxes': [
+    {
+      'tax_total': 0.0000,
+      'tribute_code': '9997'
+    }
+  ],
+  'type_operation_code': '0101',
+  'total_taxes': 0.0,
+  'customer': {
+    'client_id': 3,
+    'document': '20600629922',
+    'type_document': '6',
+    'business_name': 'MOBYTES SAC',
+    'telephone': null,
+    'email': null,
+    'address': 'JR. 16 DE MAYO NRO 746 SAN MARTIN - SAN MARTIN - MORALES'
+  },
+  'items': [
+    {
+      'quantity': 1.0000,
+      'price': 5.0000,
+      'price_tax': 5.0000,
+      'tax_total_item': 0.00,
+      'tax_unit_item': 0.0000,
+      'description': 'vaso descartable 6 OZ',
+      'system_id': '7750020006218',
+      'correlative': 1,
+      'discount': '0.0000',
+      'type': '2001',
+      'igv_percentage': '0.0000',
+      'unit': 'NIU',
+      'unit_pdf': 'UND',
+      'sunat_tax_code': '20',
+      'isc_unit_item': 0.0000,
+      'isc_total_item': 0.00,
+      'isc_code': null,
+      'isc_percentage': 0,
+      'icbper': 0.00,
+      'referencial_unit_value': 0.00
+    },
+    {
+      'quantity': 1.0000,
+      'price': 30.0000,
+      'price_tax': 30.0000,
+      'tax_total_item': 0.00,
+      'tax_unit_item': 0.0000,
+      'description': 'DESPACHO A AGENCIA',
+      'system_id': '7750020034617',
+      'correlative': 2,
+      'discount': '0.0000',
+      'type': '2002',
+      'igv_percentage': '0.0000',
+      'unit': 'ZZ',
+      'unit_pdf': 'UND',
+      'sunat_tax_code': '20',
+      'isc_unit_item': 0.0000,
+      'isc_total_item': 0.00,
+      'isc_code': null,
+      'isc_percentage': 0,
+      'icbper': 0.00,
+      'referencial_unit_value': 0.00
+    },
+    {
+      'quantity': 2.0000,
+      'price': 4.2000,
+      'price_tax': 4.2000,
+      'tax_total_item': 0.00,
+      'tax_unit_item': 0.0000,
+      'description': 'YESO CERAMICO',
+      'system_id': '7750020032231',
+      'correlative': 3,
+      'discount': '0.0000',
+      'type': '2001',
+      'igv_percentage': '0.0000',
+      'unit': 'NIU',
+      'unit_pdf': 'UND',
+      'sunat_tax_code': '20',
+      'isc_unit_item': 0.0000,
+      'isc_total_item': 0.00,
+      'isc_code': null,
+      'isc_percentage': 0,
+      'icbper': 0.00,
+      'referencial_unit_value': 0.00
+    }
+  ],
+  'discount': '0.00',
+  'seller': 'NGZ Negosy',
+  'observation': '',
+  'guides_remission': '',
+  'guides_carrier': ''
 }
 ```
 
