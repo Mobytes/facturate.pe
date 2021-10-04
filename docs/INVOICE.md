@@ -616,47 +616,163 @@ Factura al crédito
 ```
 
 ### Enviar Boleta
+Boleta sin cliente seleccionado
 ```js
 {
-  'nro_document': 'B001-00000308', 
-  'date': '2018-04-04', 
-  'invoice_type': '03', 
-  'method_name': 'Efectivo', 
-  'amount_total': 16.00, 
-  'type_receipt': 'Ticket', 
-  'currency': 'PEN', 
+  'nro_document': 'B001-00000097',
+  'date': '2021-10-04',
+  'invoice_type': '03',
+  'method_name': 'Efectivo',
+  'amount_total': 11.8645,
+  'type_receipt': 'A4',
+  'currency': 'PEN',
   'taxes': [
-              {
-              'tax_total': 0.00, 
-              'tribute_code': '1000'
-              }
-            ], 
+    {
+      'tax_total': 2.1355,
+      'tribute_code': '1000'
+    }
+  ],
+  'type_operation_code': '0101',
+  'total_taxes': 2.1355,
   'customer': {
-                'document': '-', 
-                'client_id': 1, 
-                'type_document': '-', 
-                'business_name': 'Cliente', 
-                'telephone': '-', 
-                'email': '', 
-                'address': '-'
-              }, 
+    'document': '-',
+    'client_id': 1,
+    'type_document': '-',
+    'business_name': 'Cliente',
+    'telephone': '-',
+    'email': '',
+    'address': null
+  },
   'items': [
-              {
-                'quantity': 4.00, 
-                'price': 4.00, 
-                'price_tax': 4.00, 
-                'tax_total_item': 0.00, 
-                'tax_unit_item': 0.00, 
-                'type_igv': '20', 
-                'description': 'GASEOSA INCAK', 
-                'system_id': '7750002000164', 
-                'correlative': 1, 
-                'type': '2001'
-              }
-           ], 
-  'discount': 0.00
+    {
+      'quantity': 1.0000,
+      'price': 4.2373,
+      'price_tax': 5.0000,
+      'tax_total_item': 0.76,
+      'tax_unit_item': 0.7627,
+      'description': 'vaso descartable 6 OZ',
+      'system_id': '7750020006218',
+      'correlative': 1,
+      'discount': '0.0000',
+      'type': '2001',
+      'igv_percentage': '18.0000',
+      'unit': 'NIU',
+      'unit_pdf': 'UND',
+      'sunat_tax_code': '10',
+      'isc_unit_item': 0.0000,
+      'isc_total_item': 0.00,
+      'isc_code': null,
+      'isc_percentage': 0,
+      'icbper': 0.00,
+      'referencial_unit_value': 0.00
+    },
+    {
+      'quantity': 2.0000,
+      'price': 3.8136,
+      'price_tax': 4.5000,
+      'tax_total_item': 1.37,
+      'tax_unit_item': 0.6864,
+      'description': 'YESO CERAMICO',
+      'system_id': '7750020032231',
+      'correlative': 2,
+      'discount': '0.0000',
+      'type': '2001',
+      'igv_percentage': '18.0000',
+      'unit': 'NIU',
+      'unit_pdf': 'UND',
+      'sunat_tax_code': '10',
+      'isc_unit_item': 0.0000,
+      'isc_total_item': 0.00,
+      'isc_code': null,
+      'isc_percentage': 0,
+      'icbper': 0.00,
+      'referencial_unit_value': 0.00
+    }
+  ],
+  'discount': '0.00',
+  'seller': 'NGZ Negosy',
+  'observation': ''
 }
 ```
+Boleta con cliente seleccionado
+```js
+{
+  'nro_document': 'B001-00000097',
+  'date': '2021-10-04',
+  'invoice_type': '03',
+  'method_name': 'Efectivo',
+  'amount_total': 11.8645,
+  'type_receipt': 'A4',
+  'currency': 'PEN',
+  'taxes': [
+    {
+      'tax_total': 2.1355,
+      'tribute_code': '1000'
+    }
+  ],
+  'type_operation_code': '0101',
+  'total_taxes': 2.1355,
+  'customer': {
+    'client_id': 28,
+    'document': '123456789',
+    'type_document': '1',
+    'business_name': 'Juan Perez',
+    'telephone': null,
+    'email': null,
+    'address': null
+  },
+  'items': [
+    {
+      'quantity': 1.0000,
+      'price': 4.2373,
+      'price_tax': 5.0000,
+      'tax_total_item': 0.76,
+      'tax_unit_item': 0.7627,
+      'description': 'vaso descartable 6 OZ',
+      'system_id': '7750020006218',
+      'correlative': 1,
+      'discount': '0.0000',
+      'type': '2001',
+      'igv_percentage': '18.0000',
+      'unit': 'NIU',
+      'unit_pdf': 'UND',
+      'sunat_tax_code': '10',
+      'isc_unit_item': 0.0000,
+      'isc_total_item': 0.00,
+      'isc_code': null,
+      'isc_percentage': 0,
+      'icbper': 0.00,
+      'referencial_unit_value': 0.00
+    },
+    {
+      'quantity': 2.0000,
+      'price': 3.8136,
+      'price_tax': 4.5000,
+      'tax_total_item': 1.37,
+      'tax_unit_item': 0.6864,
+      'description': 'YESO CERAMICO',
+      'system_id': '7750020032231',
+      'correlative': 2,
+      'discount': '0.0000',
+      'type': '2001',
+      'igv_percentage': '18.0000',
+      'unit': 'NIU',
+      'unit_pdf': 'UND',
+      'sunat_tax_code': '10',
+      'isc_unit_item': 0.0000,
+      'isc_total_item': 0.00,
+      'isc_code': null,
+      'isc_percentage': 0,
+      'icbper': 0.00,
+      'referencial_unit_value': 0.00
+    }
+  ],
+  'discount': '0.00',
+  'seller': 'NGZ Negosy',
+  'observation': ''
+}
+```
+
 
 ## Manejo de respuesta
 > El parámetro **voucher_id** es el identificador del documento en nuestra plataforma [facturate.pe](https://facturate.pe), se tiene que guardar en su base de datos para próximas operaciones sobre ese documento.
