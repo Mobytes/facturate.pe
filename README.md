@@ -5,7 +5,7 @@ Los documentos elétronicos que puede enviar son:
 
 * [Factura y Boleta eléctronica](docs/INVOICE.md)
 * [Comunicación de baja](docs/UNSUBSCRIBE.md)
-* Nota de Crédito (muy pronto)
+* [Nota de Crédito](docs/CREDIT_NOTE.md)
 * Nota de Debito (muy pronto)
 * [Enviar email](docs/SEND_EMAIL.md)
 * [Re-imprimir CPE](docs/RE_PRINT_CPE.md)
