@@ -11,7 +11,7 @@ https://demo.facturate.pe/api/v1/invoice/credit_note/ | POST | voucher_id_refere
 Nombre | Formato | Tipo | Requerido | Descripción
 ------------ | ------------- | ------------- | ------------- | -------------
 voucher_id_reference |  | String | Si | El valor "voucher_id" devuelvo como respuesta por facturate.pe al momento de realizar la boleta o la factura.
-type_credit_note | 01, 02 | String | Si | Tipo de nota de crédito.
+type_credit_note | 01, 02 | String | Si | Tipo de nota de crédito. **Catálogo No. 09 en el** [Catálogo de códigos de Sunat](catalogo-de-codigos.pdf) para el Tipos de nota de crédito.
 nro_document | FCxx-00000xxx ó BCxx-00000xxx | String | Si | El número de comprobante de la Nota de crédito de acuerdo a lo estipulado por la sunat.
 series | FCxx ó BCxx | String | Si | La serie del número de comprobante de la Nota de crédito.
 print_type | A4 | String | Si | Formato de la impresión de la Nota de crédito.
