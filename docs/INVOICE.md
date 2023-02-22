@@ -346,21 +346,21 @@ Gravado y Exonerado
 Exportacion de bienes (Aplicable también a exportación de servicios)
 ```js
 {
-  'nro_document': 'F001-00001287',
-  'date': '2021-10-04',
+  'nro_document': 'F001-00001507',
+  'date': '2023-02-22',
   'invoice_type': '01',
   'method_name': 'Efectivo',
-  'amount_total': 13.4000,
+  'amount_total': '211.0000',
   'type_receipt': 'A4',
   'currency': 'PEN',
   'taxes': [
     {
-      'tax_total': 0.0000,
+      'tax_total': '0.0000',
       'tribute_code': '9995'
     }
   ],
   'type_operation_code': '0200',//0200: Bienes, 0201: Servicios realizados en el país, 0208: Servicios parcialmente en el extranjero
-  'total_taxes': 0.0,
+  'total_taxes': '0.0000',
   'customer': {
     'document': '-',
     'client_id': 18,
@@ -368,17 +368,18 @@ Exportacion de bienes (Aplicable también a exportación de servicios)
     'business_name': 'JUAN FLORES',
     'telephone': '-',
     'email': '',
-    'address': null
+    'address': ''
   },
   'items': [
     {
-      'quantity': 1.0000,
-      'price': 5.0000,
-      'price_tax': 5.0000,
-      'tax_total_item': 0.00,
-      'tax_unit_item': 0.0000,
-      'description': 'vaso descartable 6 OZ',
-      'system_id': '7750020006218',
+      'quantity': '1.0000',
+      'price': '155.0000',
+      'price_tax': '155.0000',
+      'tax_total_item': '0.00',
+      'tax_unit_item': '0.0000',
+      'type_igv': '20',
+      'description': 'ANTORCHA HAND TORCH S3 SERIES/ WK-030 (NRO.1)',
+      'system_id': '7750294004026',
       'correlative': 1,
       'discount': '0.0000',
       'type': '2001',
@@ -386,21 +387,22 @@ Exportacion de bienes (Aplicable también a exportación de servicios)
       'unit': 'NIU',
       'unit_pdf': 'UND',
       'sunat_tax_code': '40',
-      'isc_unit_item': 0.0000,
-      'isc_total_item': 0.00,
+      'isc_unit_item': '0.0000',
+      'isc_total_item': '0.00',
       'isc_code': null,
       'isc_percentage': 0,
-      'icbper': 0.00,
-      'referencial_unit_value': 0.00
+      'icbper': '0.00',
+      'referencial_unit_value': '0.00'
     },
     {
-      'quantity': 2.0000,
-      'price': 4.2000,
-      'price_tax': 4.2000,
-      'tax_total_item': 0.00,
-      'tax_unit_item': 0.0000,
-      'description': 'YESO CERAMICO',
-      'system_id': '7750020032231',
+      'quantity': '2.0000',
+      'price': '28.0000',
+      'price_tax': '28.0000',
+      'tax_total_item': '0.00',
+      'tax_unit_item': '0.0000',
+      'type_igv': '20',
+      'description': 'ESTUCHE  BABY SERIES FUNNY X 6',
+      'system_id': '7750020138933',
       'correlative': 2,
       'discount': '0.0000',
       'type': '2001',
@@ -408,19 +410,18 @@ Exportacion de bienes (Aplicable también a exportación de servicios)
       'unit': 'NIU',
       'unit_pdf': 'UND',
       'sunat_tax_code': '40',
-      'isc_unit_item': 0.0000,
-      'isc_total_item': 0.00,
+      'isc_unit_item': '0.0000',
+      'isc_total_item': '0.00',
       'isc_code': null,
       'isc_percentage': 0,
-      'icbper': 0.00,
-      'referencial_unit_value': 0.00
+      'icbper': '0.00',
+      'referencial_unit_value': '0.00'
     }
   ],
   'discount': '0.00',
   'seller': 'NGZ Negosy',
   'observation': '',
-  'guides_remission': '',
-  'guides_carrier': ''
+  'exchange_rate': '1.0000'
 }
 ```
 Impuesto de bolsa con un precio de 0.00
