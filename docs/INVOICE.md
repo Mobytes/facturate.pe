@@ -343,7 +343,7 @@ Gravado y Exonerado
   'guides_carrier': ''
 }
 ```
-Exportacion de bienes
+Exportacion de bienes//Aplicable también a exportación de servicios)
 ```js
 {
   'nro_document': 'F001-00001287',
@@ -359,7 +359,7 @@ Exportacion de bienes
       'tribute_code': '9995'
     }
   ],
-  'type_operation_code': '0200',
+  'type_operation_code': '0200',//0200: Bienes, 0201: Servicios realizados en el país, 0208: Servicios parcialmente en el extranjero
   'total_taxes': 0.0,
   'customer': {
     'document': '-',
