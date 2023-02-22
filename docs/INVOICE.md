@@ -833,10 +833,12 @@ Boleta con cliente seleccionado
               'slug': 'demo'
             }, 
   'information_invoice': [
-                           { 'label': 'Operación Exonerada', 'is_invoice': True, 'amount': 8008.0 }, 
-                           { 'label': 'Operación Gravada', 'is_invoice': True, 'amount': 0 }, 
-                           { 'label': 'Operación Inafecta', 'is_invoice': True, 'amount': 0 }, 
-                           { 'label': 'Operación Gratuita', 'is_invoice': True, 'amount': 0 }], 
+                           { 'code': '1003', 'label': 'Operación Exonerada', 'is_invoice': True, 'amount': 8008.0 }, 
+                           { 'code': '1001', 'label': 'Operación Gravada', 'is_invoice': True, 'amount': 0 }, 
+                           { 'code': '1002', 'label': 'Operación Inafecta', 'is_invoice': True, 'amount': 0 }, 
+                           { 'code': '1004', 'label': 'Operación Gratuita', 'is_invoice': True, 'amount': 0 },
+                           { 'code': '1000', 'label': 'Operación Exportación', 'is_invoice': False, 'amount': 0 }//Solo si el comprobante es de exportación
+                           ], 
   'hash_value': 'c3ExF89ry3iWFX/XusoF0RxcR3bbGD8PsspmyfJ47XY=', 
   'qr_code':'qr_code en base64', 
   'barcode_pdf417': 'image in base_64', 
