@@ -343,7 +343,7 @@ Gravado y Exonerado
   'guides_carrier': ''
 }
 ```
-Exportacion de bienes//Aplicable también a exportación de servicios)
+Exportacion de bienes (Aplicable también a exportación de servicios)
 ```js
 {
   'nro_document': 'F001-00001287',
