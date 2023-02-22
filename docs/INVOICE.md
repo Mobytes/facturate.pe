@@ -781,95 +781,157 @@ Boleta con cliente seleccionado
 
 ```js
 {
-  'date': '04/04/2018 05:08 PM', 
-  'nro_document': 'F001-00000048', 
-  'customer': {
-                'name': 'EL CULTURAL S.A.C', 
-                'address': 'JR. SOFIA DELGADO 234', 
-                'nro_document': '20600767765', 
-                'email': '-'
-              }, 
-  'products': [
-                {
-                  'unit_code': 'NIU', 
-                  'quantity': '2.00', 
-                  'correlative': 2, 
-                  'description': 'GASEOSA INCAK', 
-                  'price_without_tax': '4.00', 
-                  'discount': '0.00', 
-                  'total': 8.0, 
-                  'code': '7750002000164'
-                }, 
-                {
-                  'unit_code': 'NIU', 
-                  'quantity': '1.00', 
-                  'correlative': 1, 
-                  'description': 'CONSULTORIA DE EXPEDIENTE TECNICO', 
-                  'price_without_tax': '8000.00', 
-                  'discount': '0.00', 
-                  'total': 8000.0, 
-                  'code': '7750002000122'
-                }
-              ], 
-  'amount_to_word': 'Ocho Mil Ocho con 00/100 Soles', 
-  'total_amount': '8008.00', 
-  'additional': [
-                  {
-                    'id': 5, 
-                    'code': '2002', 
-                    'description': 'SERVICIOS PRESTADOS EN LA AMAZONIA REGION SELVA PARA SER CONSUMIDOS EN LA MISMA', 
-                    'label': 'Leyenda'
-                  }
-                ], 
-  'company': {
-              'business_name': 'DEMO S.A.C.', 
-              'address': 'JR. MANCO CAPAC #529', 
-              'telephone': '976143808', 
-              'logo': '/media/company/new-user-icon_AHV7WJF.png', 
-              'ruc': '10425475148', 
-              'email': 'demo@facturate.pe', 
-              'tradename': None, 
-              'name': 'demo', 
-              'slug': 'demo'
-            }, 
-  'information_invoice': [
-                           { 'code': '1003', 'label': 'Operación Exonerada', 'is_invoice': True, 'amount': 8008.0 }, 
-                           { 'code': '1001', 'label': 'Operación Gravada', 'is_invoice': True, 'amount': 0 }, 
-                           { 'code': '1002', 'label': 'Operación Inafecta', 'is_invoice': True, 'amount': 0 }, 
-                           { 'code': '1004', 'label': 'Operación Gratuita', 'is_invoice': True, 'amount': 0 },
-                           { 'code': '1000', 'label': 'Operación Exportación', 'is_invoice': False, 'amount': 0 }//Solo si el comprobante es de exportación
-                           ], 
-  'hash_value': 'c3ExF89ry3iWFX/XusoF0RxcR3bbGD8PsspmyfJ47XY=', 
-  'qr_code':'qr_code en base64', 
-  'barcode_pdf417': 'image in base_64', 
-  'global_tax': [
-                  {
-                    'amount': '0.00', 'tax': 1, 
-                    'tax_name': 'IGV'
-                  }
-                ], 
-  'voucher': 'FACTURA ELECTRÓNICA', 
-  'voucher_code': '01', 
-  'pdf': 'No se encontro el documento pdf, comuniquese con el administrador', 
-  'xml': 'http://demo.facturate.demo:8001/resource/demo/2018/4-April/signed/10425475148-01-F001-00000048.xml',
-  'method_name': 'Efectivo', 'voucher_id': '03ead121-fbc4-470f-83de-3e2c49a8f83e', 'pdf_base64': 'pdf in base64'}
-  'information_invoice': [
-                          { 'label': 'Operación Exonerada', 'is_invoice': True, 'amount': 8008.0}, 
-                          {'label': 'Operación Gravada', 'is_invoice': True, 'amount': 0}, 
-                          {'label': 'Operación Inafecta', 'is_invoice': True, 'amount': 0}, 
-                          {'label': 'Operación Gratuita', 'is_invoice': True, 'amount': 0}], 
-  'hash_value': 'c3ExF89ry3iWFX/XusoF0RxcR3bbGD8PsspmyfJ47XY=', 
-  'qr_code': 'qr_code en base64', 
-  'barcode_pdf417': 'image in base_64', 
-  'global_tax': [
-                  {'amount': '0.00', 'tax': 1, 'tax_name': 'IGV'}
-                ], 
-  'voucher': 'FACTURA ELECTRÓNICA', 
-  'voucher_code': '01', 'pdf': 'No se encontro el documento pdf, comuniquese con el administrador', 'xml':
-  'http://demo.facturate.demo:8001/resource/demo/2018/4-April/signed/10425475148-01-F001-00000048.xml', 
-  'method_name': 'Efectivo', 
-  'voucher_id': '03ead121-fbc4-470f-83de-3e2c49a8f83e', 
-  'pdf_base64': 'pdf in base64'
+    "date": "22-02-2023 11:36",
+    "nro_document": "F001-00001506",
+    "customer": {
+        "name": "SERVICIOS GENERALES DAMIRADI S.A.C.",
+        "address": "AV. COSTA RICA LT. - MZ. R MONSERRATE 4TA ETAPA - ED LA LIBERTAD - TRUJILLO - TRUJILLO",
+        "nro_document": "20601332559",
+        "email": "-",
+        "type_document_name": "RUC"
+    },
+    "products": [
+        {
+            "unit_code": "NIU",
+            "quantity": "1.0000",
+            "correlative": 1,
+            "description": "ESTUCHE  BABY SERIES FUNNY X 6",
+            "price_with_tax": "28.0000",
+            "price_without_tax": "23.7288",
+            "discount": "0.0000",
+            "total": 23.73,
+            "code": "7750020138933",
+            "unit": {
+                "code": "NIU",
+                "description": "UNIDAD (BIENES)",
+                "abbreviation": "ud",
+                "plural": "UNIDADES"
+            },
+            "detail": null,
+            "unit_pdf": "UND",
+            "price_isc_tax": "0.0000",
+            "isc_percentage": "18.00",
+            "address_starting_point": null,
+            "address_arrival_point": null,
+            "referential_value_transport_service": null,
+            "referential_value_effective_cargo": null,
+            "referential_value_nominal_payload": null,
+            "trip_detail": null,
+            "detraction_ubigeo_starting_point": null,
+            "detraction_ubigeo_arrival_point": null
+        },
+        {
+            "unit_code": "NIU",
+            "quantity": "1.0000",
+            "correlative": 2,
+            "description": "INTERRUPTOR PARA CONSERVADORA 425769",
+            "price_with_tax": "12.0000",
+            "price_without_tax": "10.1695",
+            "discount": "0.0000",
+            "total": 10.17,
+            "code": "7750294008871",
+            "unit": {
+                "code": "NIU",
+                "description": "UNIDAD (BIENES)",
+                "abbreviation": "ud",
+                "plural": "UNIDADES"
+            },
+            "detail": null,
+            "unit_pdf": "UND",
+            "price_isc_tax": "0.0000",
+            "isc_percentage": "18.00",
+            "address_starting_point": null,
+            "address_arrival_point": null,
+            "referential_value_transport_service": null,
+            "referential_value_effective_cargo": null,
+            "referential_value_nominal_payload": null,
+            "trip_detail": null,
+            "detraction_ubigeo_starting_point": null,
+            "detraction_ubigeo_arrival_point": null
+        }
+    ],
+    "amount_to_word": "Cuarenta con 00/100 Soles",
+    "total_amount": "33.90",
+    "additional": [],
+    "company": {
+        "id": 2,
+        "business_name": "NEGOSY Y S.A.C.",
+        "address": "JR. MANCO CAPAC NRO. 241 (MANCO CAPAC 241 4TO PISO)",
+        "telephone": "65351553 Cel. 942924807",
+        "logo": "/media/company/Storm_Viewer_01.jpg",
+        "ruc": "20604747369",
+        "email": "epedropablo@hotmail.com",
+        "tradename": "NEGOSY",
+        "name": "demo",
+        "slug": "demo",
+        "owner_of": null
+    },
+    "information_invoice": [
+        {
+            "code": "1001",
+            "label": "Operación Gravada",
+            "is_invoice": true,
+            "amount": 33.9,
+            "receipt_code": "01"
+        },
+        {
+            "code": "1002",
+            "label": "Operación Inafecta",
+            "is_invoice": true,
+            "amount": 0,
+            "receipt_code": "03"
+        },
+        {
+            "code": "1003",
+            "label": "Operación Exonerada",
+            "is_invoice": true,
+            "amount": 0,
+            "receipt_code": "02"
+        },
+        {
+            "code": "1004",
+            "label": "Operación Gratuita",
+            "is_invoice": true,
+            "amount": 0,
+            "receipt_code": "05"
+        },
+        {//solo se muestra si la venta es de tipo exportacion
+            "code": "1000",
+            "label": "Operación Exportación",
+            "is_invoice": false,
+            "amount": 0,
+            "receipt_code": "04"
+        }
+    ],
+    "note": "",
+    "hash_value": "rgxdfo6FxAHCwFvE2Z0vBQudjIA=",
+    "qr_code": null,
+    "barcode_pdf417": null,
+    "global_tax": [
+        {
+            "amount": "6.10",
+            "tax": 1,
+            "tax_name": "I.G.V."
+        }
+    ],
+    "voucher": "FACTURA ELECTRÓNICA",
+    "discount": "0.00",
+    "prepaid": [],
+    "voucher_code": "01",
+    "pdf": "",
+    "xml": "https://{esquema}.facturate.pe/resource/demo/2023/22-February/signed/20604747369-01-F001-00001506.xml",
+    "method_name": "Efectivo",
+    "voucher_id": "cc97e364-aace-4f88-ba03-9d6f276e1ad3",
+    "seller": "NGZ Negosy",
+    "total_with_tax": 40,
+    "guide_remissions": "",
+    "guides_carrier": "",
+    "expiration_date": null,
+    "amount_pending_credit": "0.00",
+    "voucher_date": "2023-02-22",
+    "total_isc": 0,
+    "slogan": "No se aceptan devoluciones de productos o de dinero",
+    "pdf_base64": "(Pdf en base64)"
 }
 ```
 
