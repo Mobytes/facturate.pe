@@ -21,7 +21,7 @@ invoice_type | 01 ó 03 | String | Si | **Catálogo No. 01 en el** [Catálogo de
 currency | PEN, USD | String | Si | **Catálogo No. 02 en el** [Catálogo de códigos de Sunat](catalogo-de-codigos.pdf) para el Códigos de tipo de monedas.
 discount |  | Double(18,2) | Si | Descuento por la venta.
 amount_total |  | Double(18,2) | Si | Monto neto total de la venta. Valor que no toma en cuenta el impuesto y el descuento.
-type_operation_code | 0101, 0200, 0401 | String | Si | **Catálogo No. 51 en el** [Catálogo de códigos de Sunat](anexo-244-2019.pdf) para el Códigos de tipo de operación.
+type_operation_code | 0101, 0401, 0200, 0201, 0208 | String | Si | **Catálogo No. 51 en el** [Catálogo de códigos de Sunat](anexo-244-2019.pdf) para el Códigos de tipo de operación.
 seller |  | String | No |  Nombre usuario que realiza el comprobante.
 customer | [CUSTOMER](CUSTOMER.md) | Array | Si | Cliente de la venta.
 observation |  | String | No | Observación asociada al comprobante.
