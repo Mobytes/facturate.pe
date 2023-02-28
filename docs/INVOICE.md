@@ -14,7 +14,7 @@ Nombre | Formato | Tipo | Requerido | Descripción
 ------------ | ------------- | ------------- | ------------- | -------------
 nro_document | FXXX-XXXXXXXX ó BXXX-XXXXXXXX | String | Si | Es el número de documento.
 date | YYYY-MM-DD | String | Si | La fecha de cuando se emitio la factura.
-type_receipt | A4, A5 or Ticket | String | Si | Módelo de documento a imprimir o enviar a correo eléctronico.
+type_receipt | A4, A4B, A5 or Ticket | String | Si | Módelo de documento a imprimir o enviar a correo eléctronico.
 method_name | Efectivo, Visa, Cheque, Deposito a cuenta, Credito | String | Si | Por que medio se hizo el pago.
 expiration_credit | YYYY-MM-DD | String | No/Si(method_name es Credito) | La fecha de expiración del crédito. Es obligatorio en el caso que una venta tenga su método de pago como crédito y debe ser diferente a la fecha de la emisión del comprobante.
 invoice_type | 01 ó 03 | String | Si | **Catálogo No. 01 en el** [Catálogo de códigos de Sunat](catalogo-de-codigos.pdf) para el tipo de documento enviado. 
@@ -30,6 +30,9 @@ guides_carrier  |   | String | No | Guía de remisión transportista. Se recomie
 taxes | [TAXES](TAXES.md) | Array | Si | Impuestos de la venta.
 total_taxes |  | Double(18,2)| Si | Sumatoria total del igv de cada uno de los productos. Al no existir IGV, el valor es cero.
 items | [ITEMS](ITEMS.md) | Array | Si | Productos de la venta.
+slogan |  | String(300) | No | **SOLO FORMATO TICKET.** Muestra un **mensaje** en la parte inferior del comprobante.
+amount_charged |  | Double(18,2) | No | **SOLO FORMATO TICKET.** Monto de **dinero cobrado** en la venta.
+change |  | Double(18,2) | No | **SOLO FORMATO TICKET.** Monto de dinero dado como **vuelto** en la venta. 
 
 ### Enviar Factura
 Gravado
